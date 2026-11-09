@@ -1,9 +1,8 @@
 // Detail pages behind each nav dropdown item.
 // Copy: "PRE-QUALIFICATION & CAPABILITY PROFILE" (core divisions pp.5–7, capabilities pp.8–10, SEO keywords p.12),
 // rewritten for the web. Group fleet from Island Tower Electromechanical's flushing PQ (labelled as group).
-import { productRanges, statementImage, heroImage, ctaImage } from "./content";
+import { productRanges, heroImage, ctaImage } from "./content";
 
-const u = (id: string, w = 2000) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 export type Block = { title: string; text: string; items?: string[] };
 
@@ -32,7 +31,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 01 · Process & pipeline engineering",
     title: "Pipeline pre-commissioning & process piping.",
     lead: "Cleaning, flushing, hydrotesting, leak testing, chemical pickling, filtration and disinfection — so a pipeline is ready before it is placed into service.",
-    image: u("1607472586893-edb57bdc0e39"),
+    image: "/images/projects/mtb-abu-dhabi-airport-flushing.webp",
     metaTitle: "Pipeline Pre-Commissioning, Hydrotesting & Chemical Pickling in UAE",
     metaDescription:
       "Pipeline pre-commissioning in the UAE: system flushing, hydrotesting and pressure testing, leak testing, chemical cleaning and pickling, filtration, disinfection, process plant, steel, alloy and HDPE piping, and insulation support.",
@@ -55,7 +54,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 02 · District cooling & thermal utility",
     title: "Chilled water flushing for district cooling.",
     lead: "Engineered flushing, side-stream filtration, chemical treatment and hydrotesting for district cooling networks, ETS connections and DCP internal systems.",
-    image: u("1620203853151-496c7228306c"),
+    image: "/images/projects/palm-jumeirah-trunk-chw-flushing-2.webp",
     metaTitle: "District Cooling Flushing, ETS Works & Chilled Water Flushing in UAE",
     metaDescription:
       "Chilled water flushing for district cooling networks in the UAE: flushing velocity planning, temporary pumps, side-stream filtration, ETS mechanical works, DCP piping and filter cleaning, CHW chemical treatment and hydrotesting.",
@@ -78,7 +77,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 03 · Industrial process & factory utilities",
     title: "Factory utilities & industrial process engineering.",
     lead: "Warehouse-to-factory conversions, process piping and compressed air, water, steam, gas and chemical utilities — built and commissioned.",
-    image: u("1538474705339-e87de81450e8"),
+    image: "/images/projects/construction-site-pipeline-works.webp",
     metaTitle: "Factory Utility Installation, Boiler Cleaning & Heavy Fuel Line Flushing UAE",
     metaDescription:
       "Industrial process engineering in the UAE: warehouse-to-factory conversion, factory utility construction and commissioning, process piping, compressed air, steam and gas utilities, industrial boiler cleaning, heavy fuel line flushing and paint rooms.",
@@ -101,7 +100,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 04 · Water, wastewater & environmental",
     title: "Water, wastewater & environmental process solutions.",
     lead: "RO and STP installation and commissioning support, contaminated water treatment, desalination support and modular treatment packages.",
-    image: statementImage,
+    image: "/images/projects/al-mariah-island-water-tanks.webp",
     metaTitle: "RO Plant Commissioning, STP Installation & Contaminated Water Treatment UAE",
     metaDescription:
       "Water and wastewater process solutions in the UAE: RO plant installation and commissioning, sewage treatment plant (STP) installation, industrial contaminated water treatment, desalination support, manual and automatic chemical dosing and containerised plants.",
@@ -124,7 +123,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 05 · Process plant EPC & infrastructure",
     title: "Process plant EPC & industrial infrastructure.",
     lead: "Integrated engineering, procurement, construction, installation, testing and commissioning for process plants and utility infrastructure.",
-    image: heroImage,
+    image: "/images/projects/masdar-city-flushing-skid.webp",
     metaTitle: "Process Plant EPC, Storage Tanks & Industrial Infrastructure in UAE",
     metaDescription:
       "Process plant EPC in the UAE: storage tank design and installation, process piping and utility connections, civil foundations, structural steel platforms and pipe supports, E&I coordination, hygienic process factories, testing, commissioning and retrofit.",
@@ -146,7 +145,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 06 · Industrial cleaning & hydro-demolition",
     title: "Industrial cleaning, hydro-demolition & surface engineering.",
     lead: "High-pressure and UHP water jetting, concrete hydro-cutting, heat exchanger cleaning, blasting and coating for industrial assets.",
-    image: u("1556695736-d287caebc48e"),
+    image: "/images/projects/large-bore-pipe-inspection.webp",
     metaTitle: "UHP Water Jetting, Hydro-Demolition & Heat Exchanger Cleaning UAE",
     metaDescription:
       "Industrial cleaning in the UAE: aquajetting, high-pressure and ultra-high-pressure water jetting, concrete hydro-demolition and hydro-cutting, heat exchanger and condenser tube cleaning, sand and wet abrasive blasting and protective coating.",
@@ -191,7 +190,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 08 · Equipment engineering, assembly, sales & rental",
     title: "Engineered equipment — assembled, sold and rented.",
     lead: "Pump packages, flushing and filtration skids, hydrotest pumps, generators, compressors and tanks — selected, integrated and supported to the hydraulic requirement.",
-    image: productRanges[0].image,
+    image: "/images/projects/yellow-flushing-pump-skids.webp",
     metaTitle: "Engineered Pump Packages, Flushing Skids & Industrial Equipment Rental UAE",
     metaDescription:
       "Equipment engineering in the UAE: engineered pump packages, diesel and electric pump assemblies, flushing and filtration skid rental, hydrotest pump rental, generator and air compressor rental, dewatering and UHP pumps, tanks and water-jetting equipment.",

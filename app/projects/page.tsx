@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import InnerPage from "@/components/InnerPage";
 import ProjectIndex from "@/components/ProjectIndex";
-import { GroupExperience, PageHero } from "@/components/sections/Sections";
+import { GroupExperience, GroupGallery, PageHero } from "@/components/sections/Sections";
 import { groupStats, references } from "@/lib/content";
 
 const pad = (n: number) => String(n).padStart(2, "0");
@@ -33,6 +33,7 @@ export default function ProjectsPage() {
       />
       <ProjectIndex />
       <GroupExperience />
+      <GroupGallery />
     </InnerPage>
   );
 }

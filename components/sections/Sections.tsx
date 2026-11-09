@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
-import { capabilities, chemicalFunctions, chemicalGroups, clients, company, ctaImage, documents, environments, facilities, groupFleet, groupReferences, groupStats, productRanges, qhse, references, strategy, whyHydro } from "@/lib/content";
+import { capabilities, chemicalFunctions, chemicalGroups, clients, company, ctaImage, documents, environments, facilities, groupFleet, groupGallery, groupReferences, groupStats, productRanges, qhse, references, strategy, whyHydro } from "@/lib/content";
 
 export function Capabilities() {
   return (
@@ -259,6 +259,33 @@ export function GroupExperience({ limit }: { limit?: number }) {
           {rows.map((r) => <li key={r.name}><b>{r.name}</b><span>{r.scope}</span><small>{r.sector}</small></li>)}
         </ul>
         <p className="grp-note rv">Source: Island Tower Electromechanical Works LLC flushing reference list. Shown as group experience.</p>
+      </div>
+    </section>
+  );
+}
+
+// Projects page photo wall — group flushing work, captioned with site and location.
+export function GroupGallery() {
+  return (
+    <section className="gal" id="gallery">
+      <div className="wrap">
+        <div className="sec-head rv">
+          <div>
+            <span className="label">Project gallery</span>
+            <h2 className="serif">On site, across the UAE.</h2>
+          </div>
+          <p>Flushing, filtration and chemical treatment set-ups from Island Tower Group projects — temporary pumps, manifolds and side-stream filtration working on live sites.</p>
+        </div>
+        <ul className="gal-grid">
+          {groupGallery.map((g) => (
+            <li key={g.src} className={`gal-item rv${g.wide ? " wide" : ""}`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={g.src} alt={`${g.title} — ${g.place}`} loading="lazy" decoding="async" />
+              <div className="gal-cap"><b>{g.title}</b><span>{g.place}</span></div>
+            </li>
+          ))}
+        </ul>
+        <p className="gal-note rv">Group experience — Island Tower Electromechanical Works LLC.</p>
       </div>
     </section>
   );

@@ -59,12 +59,12 @@ export const homeSectionFor: Record<string, string> = {
 
 // Legacy explorer (not on the current landing page) — kept in sync with the divisions
 export const serviceExplorer = [
-  { title: "Chilled Water Flushing", text: "Engineered flushing, filtration and chemical treatment for district cooling networks, ETS and building CHW systems.", href: "/solutions/district-cooling", image: u("1620203853151-496c7228306c") },
-  { title: "Pipeline Pre-Commissioning", text: "Cleaning, flushing, hydrotesting, leak testing and chemical pickling before a system is placed into service.", href: "/solutions/process-pipeline-engineering", image: u("1607472586893-edb57bdc0e39") },
-  { title: "Industrial Utilities", text: "Factory conversions, process piping and compressed air, steam, gas and water utilities.", href: "/solutions/industrial-process-utilities", image: u("1538474705339-e87de81450e8") },
-  { title: "Water & Wastewater", text: "RO and STP installation and commissioning support, contaminated water and modular treatment packages.", href: "/solutions/water-wastewater", image: u("1533077162801-86490c593afb") },
-  { title: "Industrial Cleaning", text: "UHP water jetting, hydro-demolition, heat exchanger cleaning and blasting.", href: "/solutions/industrial-cleaning", image: u("1556695736-d287caebc48e") },
-  { title: "Equipment & Rental", text: "Engineered pump packages, flushing and filtration skids, generators and compressors.", href: "/products/equipment", image: u("1579525612525-053cd3e8cbd7") },
+  { title: "Chilled Water Flushing", text: "Engineered flushing, filtration and chemical treatment for district cooling networks, ETS and building CHW systems.", href: "/solutions/district-cooling", image: "/images/projects/palm-jumeirah-trunk-chw-flushing-1.webp" },
+  { title: "Pipeline Pre-Commissioning", text: "Cleaning, flushing, hydrotesting, leak testing and chemical pickling before a system is placed into service.", href: "/solutions/process-pipeline-engineering", image: "/images/projects/al-mariah-island-piping-manifold.webp" },
+  { title: "Industrial Utilities", text: "Factory conversions, process piping and compressed air, steam, gas and water utilities.", href: "/solutions/industrial-process-utilities", image: "/images/projects/construction-site-pipeline-works.webp" },
+  { title: "Water & Wastewater", text: "RO and STP installation and commissioning support, contaminated water and modular treatment packages.", href: "/solutions/water-wastewater", image: "/images/projects/filtration-unit-installation.webp" },
+  { title: "Industrial Cleaning", text: "UHP water jetting, hydro-demolition, heat exchanger cleaning and blasting.", href: "/solutions/industrial-cleaning", image: "/images/projects/large-bore-pipe-inspection.webp" },
+  { title: "Equipment & Rental", text: "Engineered pump packages, flushing and filtration skids, generators and compressors.", href: "/products/equipment", image: "/images/projects/yellow-flushing-pump-skids.webp" },
 ];
 
 export const serviceRibbon = [
@@ -79,21 +79,21 @@ export const serviceRibbon = [
 ];
 
 export const manifesto = [
-  { step: "Study", lines: ["Every process", "begins with"], accent: "understanding.", caption: "System purpose, conditions and risk", image: u("1535868118629-f37bcd69ff59", 900) },
-  { step: "Engineer", lines: ["Planned carefully.", "Executed with control."], accent: "Validated fully.", caption: "Method, equipment and documented results", image: u("1607472586893-edb57bdc0e39", 900) },
-  { step: "Operate", lines: ["Trial and no error."], accent: "Ready for operation.", label: "Flush · Test · Clean · Commission", caption: "Commissioning-ready assets", image: u("1533163238111-4a7ced54f2e4", 900) },
+  { step: "Study", lines: ["Every process", "begins with"], accent: "understanding.", caption: "System purpose, conditions and risk", image: "/images/projects/technical-assessment-team.webp" },
+  { step: "Engineer", lines: ["Planned carefully.", "Executed with control."], accent: "Validated fully.", caption: "Method, equipment and documented results", image: "/images/projects/mtb-abu-dhabi-airport-flushing.webp" },
+  { step: "Operate", lines: ["Trial and no error."], accent: "Ready for operation.", label: "Flush · Test · Clean · Commission", caption: "Commissioning-ready assets", image: "/images/projects/palm-jumeirah-trunk-chw-flushing-3.webp" },
 ];
 
 // Engineering methodology — profile p.8 (8 stages). Used by the horizontal journey and /solutions.
 export const chapters = [
-  { n: "01", title: "Technical assessment", text: "Drawings, pipe sizes, materials, volumes, design and operating pressure, flow, contamination risk, chemical compatibility and acceptance criteria are reviewed first.", tag: "Engineering before execution.", image: u("1568487007364-175e0d26233b", 1200) },
-  { n: "02", title: "Method engineering", text: "Method statement, ITP, flushing or cleaning sequence, hydrotest procedure, chemical plan, equipment layout, hose route, filtration stages and safety controls.", tag: "Every step written down.", image: u("1533077162801-86490c593afb", 1200) },
-  { n: "03", title: "Equipment sizing", text: "Pumps, filters, strainers, tanks, generators, compressors, manifolds, gauges and chart recorders selected on flow, head, pressure, solids loading and duration.", tag: "Correct equipment, not available equipment.", image: u("1607472586893-edb57bdc0e39", 1200) },
-  { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilised to site.", tag: "Ready from our warehouse to your site.", image: u("1579525612525-053cd3e8cbd7", 1200) },
-  { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure and leak testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: u("1620203853151-496c7228306c", 1200) },
-  { n: "06", title: "Monitoring & validation", text: "Flow, pressure, turbidity, filter differential pressure, test duration, leakage, chemical parameters and client witness points are monitored throughout.", tag: "Measured, not assumed.", image: u("1644389355109-15b26f71c36b", 1200) },
+  { n: "01", title: "Technical assessment", text: "Drawings, pipe sizes, materials, volumes, design and operating pressure, flow, contamination risk, chemical compatibility and acceptance criteria are reviewed first.", tag: "Engineering before execution.", image: "/images/projects/technical-assessment-team.webp" },
+  { n: "02", title: "Method engineering", text: "Method statement, ITP, flushing or cleaning sequence, hydrotest procedure, chemical plan, equipment layout, hose route, filtration stages and safety controls.", tag: "Every step written down.", image: "/images/projects/night-monitoring-team.webp" },
+  { n: "03", title: "Equipment sizing", text: "Pumps, filters, strainers, tanks, generators, compressors, manifolds, gauges and chart recorders selected on flow, head, pressure, solids loading and duration.", tag: "Correct equipment, not available equipment.", image: "/images/projects/yellow-flushing-pump-skids.webp" },
+  { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilised to site.", tag: "Ready from our warehouse to your site.", image: "/images/projects/site-mobilization-jvc.webp" },
+  { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure and leak testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: "/images/projects/jvc-diesel-flushing-pumps.webp" },
+  { n: "06", title: "Monitoring & validation", text: "Flow, pressure, turbidity, filter differential pressure, test duration, leakage, chemical parameters and client witness points are monitored throughout.", tag: "Measured, not assumed.", image: "/images/projects/presidential-palace-chw-flushing.webp" },
   { n: "07", title: "Documentation & handover", text: "Reports, test records, pressure charts, flushing and chemical records, photographs, equipment logs and completion certificates.", tag: "Evidence for acceptance.", image: u("1526599256864-6bedb9d7dfb5", 1200) },
-  { n: "08", title: "Optimization & support", text: "Commissioning support, troubleshooting, additional filtration, chemical adjustment, balancing assistance, temporary utilities and maintenance follow-up.", tag: "Beyond completion — to reliable operation.", image: u("1533163238111-4a7ced54f2e4", 1200) },
+  { n: "08", title: "Optimization & support", text: "Commissioning support, troubleshooting, additional filtration, chemical adjustment, balancing assistance, temporary utilities and maintenance follow-up.", tag: "Beyond completion — to reliable operation.", image: "/images/projects/palm-jumeirah-trunk-chw-flushing-2.webp" },
 ];
 
 // Core business divisions — profile pp.5–7 (with handwritten edits: Chemical Pickling replaces flange management;
@@ -274,14 +274,14 @@ export const productRanges = [
     text: "Engineered pump packages, diesel and electric pumps, flushing and filtration skids, hydrotest pumps, generators, compressors, dewatering pumps, tanks and water-jetting equipment — selected, assembled and supported by our technicians.",
     tags: ["Pump packages", "Flushing skids", "Filtration skids", "Generators", "Compressors", "UHP"],
     link: "View the fleet",
-    image: u("1579525612525-053cd3e8cbd7", 1100),
+    image: "/images/projects/jvc-diesel-flushing-pumps.webp",
   },
   {
     n: "02", id: "chemicals", title: "Chemicals & Supply",
     text: "Flushing, cleaning, descaling, passivation, biocide and corrosion-control chemistry, plus dosing system support — chosen for the pipe material, contamination type and disposal constraints.",
     tags: ["Cleaning", "Descaling", "Passivation", "Biocide", "Corrosion control", "Dosing"],
     link: "View chemicals",
-    image: u("1526599256864-6bedb9d7dfb5", 1100),
+    image: "/images/projects/jvc-chemical-dosing-1.webp",
   },
 ];
 
@@ -355,14 +355,34 @@ export const footerLinks = [
 
 export const heroVideo = "";
 export const heroImage = u("1535868118629-f37bcd69ff59", 2400);
-export const statementImage = u("1533163238111-4a7ced54f2e4", 2000);
-export const ctaImage = u("1468657988500-aca2be09f4c6", 2000);
+export const statementImage = "/images/projects/palm-jumeirah-trunk-chw-flushing-1.webp"; // CHW flushing, Palm Jumeirah trunk
+export const ctaImage = "/images/projects/hero-chilled-water-flushing-filtration.webp"; // side-stream filtration set-up
 // Inner-page banners — one photo per page so no two banners look the same
-export const aboutImage = u("1513828583688-c52646db42da", 2200); // stainless process plant
+export const aboutImage = "/images/projects/palm-jumeirah-trunk-chw-flushing-3.webp"; // CHW plant room flushing
 export const resourcesImage = u("1581092160562-40aa08e78837", 2200); // engineer over technical drawings
-export const contactImage = u("1504917595217-d4dc5ebe6122", 2200); // field work, welding sparks
+export const contactImage = "/images/projects/site-mobilization-jvc.webp"; // site mobilization, JVC
 
 // Full-width parallax image band on the About page (<ParallaxBand />)
 export const bands = {
-  about: { image: u("1620203853151-496c7228306c", 1800), label: "Our promise", text: "Clean, tested, reliable — and ready for operation." },
+  about: { image: "/images/projects/palm-jumeirah-trunk-chw-flushing-1.webp", label: "Our promise", text: "Clean, tested, reliable — and ready for operation." },
 };
+
+// Project gallery (Projects page) — Island Tower Group flushing work, photos from the flushing PQ.
+// `wide` spans two columns; only use it on the sharper (1200px+) photos.
+export const groupGallery: { src: string; title: string; place: string; wide?: boolean }[] = [
+  { src: "/images/projects/palm-jumeirah-trunk-chw-flushing-1.webp", title: "CHW flushing — trunk line", place: "Palm Jumeirah, Dubai", wide: true },
+  { src: "/images/projects/mtb-abu-dhabi-airport-flushing.webp", title: "Flushing manifold", place: "MTB, Abu Dhabi Airport" },
+  { src: "/images/projects/palm-jumeirah-dcp-network-flushing.webp", title: "DCP network flushing", place: "Palm Jumeirah, Dubai" },
+  { src: "/images/projects/al-mariah-island-piping-manifold.webp", title: "Temporary flushing set-up", place: "Al Maryah Island, Abu Dhabi" },
+  { src: "/images/projects/jvc-diesel-flushing-pumps.webp", title: "11 flushing pumps running", place: "Jumeirah Village Circle, Dubai", wide: true },
+  { src: "/images/projects/presidential-palace-chw-flushing.webp", title: "Chilled water flushing", place: "Presidential Palace, Abu Dhabi" },
+  { src: "/images/projects/cleveland-clinic-chw-flushing.webp", title: "Chilled water flushing", place: "Cleveland Clinic, Abu Dhabi" },
+  { src: "/images/projects/masdar-city-flushing-skid.webp", title: "Flushing & filtration skid", place: "Masdar City, Abu Dhabi" },
+  { src: "/images/projects/jvc-chemical-dosing-1.webp", title: "Chemical dosing", place: "Jumeirah Village Circle, Dubai", wide: true },
+  { src: "/images/projects/mirdif-city-centre-filtration.webp", title: "Filtration unit", place: "Mirdif City Centre, Dubai" },
+  { src: "/images/projects/al-mariah-island-water-tanks.webp", title: "Water tanks & filtration", place: "Al Maryah Island, Abu Dhabi" },
+  { src: "/images/projects/palm-crescent-flushing-pumps.webp", title: "Flushing pump packages", place: "Palm Crescent PDC, Dubai" },
+  { src: "/images/projects/palm-jumeirah-trunk-chw-flushing-2.webp", title: "Strainer & bypass loop", place: "Palm Jumeirah, Dubai", wide: true },
+  { src: "/images/projects/technical-assessment-team.webp", title: "Engineers on site", place: "GDC BBET, Dubai" },
+  { src: "/images/projects/yellow-flushing-pump-skids.webp", title: "Pump skids", place: "Palm Jumeirah DCP, Dubai" },
+];
