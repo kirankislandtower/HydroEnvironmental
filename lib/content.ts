@@ -5,6 +5,8 @@
 // Items marked TODO need confirmation before launch.
 
 const u = (id: string, w = 1400) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
+// Pexels (free licence, hotlinked from the Pexels CDN)
+const px = (id: number, w = 1600) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
 
 export const company = {
   // Legal name per trade licence (the new profile prints "Hydro Engineering & Environmental" — licence order kept on purpose)
@@ -86,14 +88,14 @@ export const manifesto = [
 
 // Engineering methodology — profile p.8 (8 stages). Used by the horizontal journey and /solutions.
 export const chapters = [
-  { n: "01", title: "Technical assessment", text: "Drawings, pipe sizes, materials, volumes, design and operating pressure, flow, contamination risk, chemical compatibility and acceptance criteria are reviewed first.", tag: "Engineering before execution.", image: "/images/projects/technical-assessment-team.webp" },
-  { n: "02", title: "Method engineering", text: "Method statement, ITP, flushing or cleaning sequence, hydrotest procedure, chemical plan, equipment layout, hose route, filtration stages and safety controls.", tag: "Every step written down.", image: "/images/projects/night-monitoring-team.webp" },
-  { n: "03", title: "Equipment sizing", text: "Pumps, filters, strainers, tanks, generators, compressors, manifolds, gauges and chart recorders selected on flow, head, pressure, solids loading and duration.", tag: "Correct equipment, not available equipment.", image: "/images/projects/yellow-flushing-pump-skids.webp" },
-  { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilised to site.", tag: "Ready from our warehouse to your site.", image: "/images/projects/site-mobilization-jvc.webp" },
-  { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure and leak testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: "/images/projects/jvc-diesel-flushing-pumps.webp" },
-  { n: "06", title: "Monitoring & validation", text: "Flow, pressure, turbidity, filter differential pressure, test duration, leakage, chemical parameters and client witness points are monitored throughout.", tag: "Measured, not assumed.", image: "/images/projects/presidential-palace-chw-flushing.webp" },
-  { n: "07", title: "Documentation & handover", text: "Reports, test records, pressure charts, flushing and chemical records, photographs, equipment logs and completion certificates.", tag: "Evidence for acceptance.", image: u("1526599256864-6bedb9d7dfb5", 1200) },
-  { n: "08", title: "Optimization & support", text: "Commissioning support, troubleshooting, additional filtration, chemical adjustment, balancing assistance, temporary utilities and maintenance follow-up.", tag: "Beyond completion — to reliable operation.", image: "/images/projects/palm-jumeirah-trunk-chw-flushing-2.webp" },
+  { n: "01", title: "Technical assessment", text: "Drawings, pipe sizes, materials, volumes, design and operating pressure, flow, contamination risk, chemical compatibility and acceptance criteria are reviewed first.", tag: "Engineering before execution.", image: px(8470842, 1200) },
+  { n: "02", title: "Method engineering", text: "Method statement, ITP, flushing or cleaning sequence, hydrotest procedure, chemical plan, equipment layout, hose route, filtration stages and safety controls.", tag: "Every step written down.", image: px(37198875, 1200) },
+  { n: "03", title: "Equipment sizing", text: "Pumps, filters, strainers, tanks, generators, compressors, manifolds, gauges and chart recorders selected on flow, head, pressure, solids loading and duration.", tag: "Correct equipment, not available equipment.", image: px(32489252, 1200) },
+  { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilised to site.", tag: "Ready from our warehouse to your site.", image: px(35602970, 1200) },
+  { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure and leak testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: px(16442683, 1200) },
+  { n: "06", title: "Monitoring & validation", text: "Flow, pressure, turbidity, filter differential pressure, test duration, leakage, chemical parameters and client witness points are monitored throughout.", tag: "Measured, not assumed.", image: px(34637294, 1200) },
+  { n: "07", title: "Documentation & handover", text: "Reports, test records, pressure charts, flushing and chemical records, photographs, equipment logs and completion certificates.", tag: "Evidence for acceptance.", image: px(8293666, 1200) },
+  { n: "08", title: "Optimization & support", text: "Commissioning support, troubleshooting, additional filtration, chemical adjustment, balancing assistance, temporary utilities and maintenance follow-up.", tag: "Beyond completion — to reliable operation.", image: px(36824351, 1200) },
 ];
 
 // Core business divisions — profile pp.5–7 (with handwritten edits: Chemical Pickling replaces flange management;
