@@ -4,9 +4,9 @@ import { GroupFleet, PageHero, Products } from "@/components/sections/Sections";
 import { productRanges } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Equipment Rental & Sales UAE — Pump Packages, Flushing Skids, Generators & Chemicals",
+  title: "Equipment Rental & Chemicals Supply UAE",
   description:
-    "Engineered pump packages, diesel pump rental, flushing and filtration skid rental, hydrotest pumps, generator and air compressor rental, dewatering pumps, UHP equipment, tanks and cleaning chemicals in the UAE.",
+    "Pump packages, flushing and filtration skids, generators and compressors for rent or sale, plus water treatment chemicals and dosing in the UAE.",
   alternates: { canonical: "/products" },
 };
 

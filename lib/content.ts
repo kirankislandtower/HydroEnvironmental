@@ -15,7 +15,7 @@ export const company = {
   positioning: "We do not merely install systems — we engineer performance, reliability and operational certainty.",
   identity: "Chem-mechanical process engineering",
   established: "2008",
-  // TODO: confirm office — new profile says Dubai, licence says Sharjah
+  // Office per trade licence (Sharjah SEDD no. 561447, issued 21 May 2008): Al Sajaa Industrial Area, Sharjah
   phone: "+971 54 305 8357",
   phoneHref: "tel:+971543058357",
   // Pre-filled WhatsApp message, written from the client's side — they fill in the blanks
@@ -211,7 +211,7 @@ export const references = [
   { year: "2019", name: "Al Raha Tower", scope: "Greywater treatment plant AMC", relLabel: "Client", rel: "Al Bonian Facilities Management" },
   { year: "2019", name: "Fairmont Al Quoz Accommodation", scope: "STP operation & maintenance", relLabel: "Client", rel: "Fairmont Dubai" },
   // historic (2008–2013)
-  { year: "2010", name: "Dubai Metro — Red & Green Lines", scope: "Disinfection", relLabel: "Contracted by", rel: "ETA", historic: true },
+  { year: "2010–11", name: "Dubai Metro — Red & Green Lines", scope: "Disinfection", relLabel: "Contracted by", rel: "ETA", historic: true },
   { year: "2010", name: "Gateway Towers, Palm Jumeirah", scope: "Disinfection of tanks & piping", relLabel: "Contracted by", rel: "ETA", historic: true },
   { year: "2012", name: "Princess Tower, Dubai", scope: "Chilled-water system flushing", relLabel: "Contracted by", rel: "Hitachi Plant JV", historic: true },
   { year: "2012", name: "Al Rakha — 300 m³/day STP", scope: "STP supply, installation & commissioning", relLabel: "Client", rel: "Sorouh", historic: true },

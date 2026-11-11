@@ -5,9 +5,9 @@ import Chapters from "@/components/sections/Chapters";
 import { statementImage } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Divisions — Pipeline Pre-Commissioning, District Cooling Flushing & Industrial Engineering UAE",
+  title: "Engineering Divisions — Flushing & Utilities UAE",
   description:
-    "Eight core divisions: process & pipeline engineering, district cooling & thermal utility, industrial process & factory utilities, water & wastewater, process plant EPC, industrial cleaning & hydro-demolition, chemical treatment, and equipment engineering, sales & rental.",
+    "Eight HEES divisions: pipeline pre-commissioning, district cooling, factory utilities, water treatment, EPC, industrial cleaning and chemicals.",
   alternates: { canonical: "/solutions" },
 };
 

@@ -31,7 +31,7 @@ const barlow = Barlow_Condensed({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: seo.title, template: "%s | HEES UAE" },
+  title: { default: seo.title, template: "%s | HEES" },
   description: seo.description,
   keywords,
   applicationName: "Hydro Environmental & Engineering Services LLC",

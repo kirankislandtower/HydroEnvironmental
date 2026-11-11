@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
+import { breadcrumbData, ldJson } from "@/lib/seo";
 import { capabilities, chemicalFunctions, chemicalGroups, clients, company, ctaImage, documents, environments, facilities, groupFleet, groupReferences, groupStats, productRanges, qhse, references, strategy, whyHydro } from "@/lib/content";
 
 export function Capabilities() {
@@ -409,6 +410,7 @@ export function PageHero({ eyebrow, title, lead, image, crumb, parent, facts, va
   const light = variant === "index";
   return (
     <section className={`page-hero hx-${variant}${facts ? " has-facts" : ""}`} id="top" data-tone={light ? "light" : undefined}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(breadcrumbData([...(parent ? [{ name: parent.label, href: parent.href }] : []), { name: crumb }])) }} />
       {(variant === "cinematic" || variant === "center") && image && <div className="page-hero-bg" style={{ backgroundImage: `url("${image}")` }} />}
       {(variant === "cinematic" || (variant === "center" && image)) && <div className="hx-shade" />}
       {variant === "center" && !image && <div className="hx-grid" aria-hidden="true" />}

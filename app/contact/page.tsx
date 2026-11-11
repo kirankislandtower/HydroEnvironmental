@@ -9,9 +9,9 @@ import { reach } from "@/lib/landing";
 const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(reach.mapQuery)}`;
 
 export const metadata: Metadata = {
-  title: "Contact Us — Flushing, Pre-Commissioning & Equipment Rental in UAE",
+  title: "Contact HEES — Sharjah, UAE",
   description:
-    "Contact Hydro Environmental & Engineering Services LLC for chilled water flushing, pipeline pre-commissioning, hydrotesting, chemical cleaning, industrial utilities and equipment rental across the UAE.",
+    "Call, WhatsApp or email HEES in Al Sajaa Industrial Area, Sharjah, for flushing, pre-commissioning, chemical treatment and equipment rental.",
   alternates: { canonical: "/contact" },
 };
 

@@ -6,9 +6,9 @@ import { aboutImage, bands, company } from "@/lib/content";
 import "./about.css";
 
 export const metadata: Metadata = {
-  title: "About Us — Chem-Mechanical Process Engineering Company in UAE since 2008",
+  title: "About HEES — Process Engineering UAE since 2008",
   description:
-    "Hydro Environmental & Engineering Services LLC (HEES) — a UAE chem-mechanical process engineering company since 2008, part of Island Tower Group. Vision, mission, Trial and No Error philosophy, why Hydro, facilities and QHSE.",
+    "Hydro Environmental & Engineering Services LLC: a Sharjah chem-mechanical process engineering company since 2008, part of Island Tower Group.",
   alternates: { canonical: "/about" },
 };
 

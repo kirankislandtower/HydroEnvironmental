@@ -5,10 +5,10 @@ import { company, divisionNav, faqs } from "./content";
 export const siteUrl = "https://www.heesllc.ae";
 
 export const seo = {
-  title: "Chem-Mechanical Process Engineering Company in UAE | Hydro Environmental & Engineering Services LLC",
-  shortTitle: "Chem-Mechanical Process Engineering Company in UAE",
+  title: "Hydro Environmental & Engineering Services | UAE",
+  shortTitle: "Chem-Mechanical Process Engineering in UAE",
   description:
-    "HEES is a UAE chem-mechanical process engineering company since 2008 — chilled water flushing, pipeline pre-commissioning, hydrotesting, chemical cleaning, industrial commissioning, water treatment and engineered equipment rental.",
+    "UAE chem-mechanical process engineering since 2008: chilled water flushing, pre-commissioning, hydrotesting, chemical treatment and equipment rental.",
 };
 
 /** Primary + secondary keywords (grouped by search intent). */
@@ -99,4 +99,35 @@ export function faqStructuredData() {
   };
 
   return { "@context": "https://schema.org", ...faq };
+}
+
+/** Serialise JSON-LD safely for a <script type="application/ld+json"> tag. */
+export const ldJson = (data: unknown) => JSON.stringify(data).replace(/</g, "\\u003c");
+
+/** BreadcrumbList for inner pages (the current page is the last item, without a URL). */
+export function breadcrumbData(trail: { name: string; href?: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [{ name: "Home", href: "/" }, ...trail].map((t, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: t.name,
+      ...(t.href ? { item: `${siteUrl}${t.href === "/" ? "" : t.href}` } : {}),
+    })),
+  };
+}
+
+/** Service schema for a division / equipment page, linked to the Organization on the home page. */
+export function serviceData(p: { name: string; description: string; path: string; type: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: p.name,
+    serviceType: p.type,
+    description: p.description,
+    url: `${siteUrl}${p.path}`,
+    provider: { "@type": "LocalBusiness", "@id": `${siteUrl}/#organization`, name: company.name, telephone: company.phone.replace(/\s/g, "") },
+    areaServed: { "@type": "Country", name: "United Arab Emirates" },
+  };
 }

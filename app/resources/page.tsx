@@ -6,9 +6,9 @@ import { resourcesImage } from "@/lib/content";
 import { faqStructuredData } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Resources — Capability Profile, Equipment List & FAQ",
+  title: "Capability Profile, Equipment List & FAQ",
   description:
-    "Download requests for the HEES pre-qualification & capability profile, equipment list and sample method statements, plus answers on chilled water flushing, pre-commissioning, hydrotesting, chemical cleaning and equipment rental in the UAE.",
+    "Request the HEES capability profile, equipment list and method statements, and read answers on flushing, hydrotesting and equipment rental.",
   alternates: { canonical: "/resources" },
 };
 

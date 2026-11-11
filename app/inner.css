@@ -253,6 +253,18 @@ body.menu-open .qc { display: none; }
 @media (max-width: 600px) { .qc { gap: 10px; } .qc-ico { width: 52px; height: 52px; } .qc-label { display: none; } }
 @media (prefers-reduced-motion: reduce) { .qc-wa .qc-ico::after { animation: none; display: none; } }
 
+/* ---------- Legal / 404 ---------- */
+.legal { background: var(--color-paper); color: var(--color-ink); padding: 100px 0 120px; }
+.legal-body { max-width: 760px; }
+.legal-body h2 { font-size: 34px; margin: 44px 0 12px; }
+.legal-body p, .legal-body li { color: var(--color-slate); font-size: 16.5px; }
+.legal-body ul { padding-left: 20px; display: grid; gap: 10px; }
+.legal-body b { color: var(--color-ink); font-weight: 500; }
+.legal-body a { color: var(--color-green); text-decoration: underline; text-underline-offset: 3px; }
+.legal-links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.btn-line-dark { border-color: rgba(31,73,125,.35); color: var(--color-ink); }
+.btn-line-dark:hover { border-color: var(--color-ink); background: rgba(31,73,125,.06); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1100px) {
   .hx-split .hx-in { grid-template-columns: 1fr; min-height: 0; gap: 48px; }

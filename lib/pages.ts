@@ -35,9 +35,9 @@ export const solutionPages: DetailPage[] = [
     title: "Pipeline pre-commissioning & process piping.",
     lead: "Cleaning, flushing, hydrotesting, leak testing, chemical pickling, filtration and disinfection — so a pipeline is ready before it is placed into service.",
     image: u("1607472586893-edb57bdc0e39"),
-    metaTitle: "Pipeline Pre-Commissioning, Hydrotesting & Chemical Pickling in UAE",
+    metaTitle: "Pipeline Pre-Commissioning & Hydrotesting UAE",
     metaDescription:
-      "Pipeline pre-commissioning in the UAE: system flushing, hydrotesting and pressure testing, leak testing, chemical cleaning and pickling, filtration, disinfection, process plant, steel, alloy and HDPE piping, and insulation support.",
+      "Pipeline pre-commissioning in the UAE: flushing, hydrotesting, leak testing, chemical pickling and disinfection — documented and ready for service.",
     introTitle: "Systems that work correctly from day one.",
     intro:
       "Pre-commissioning covers every activity required before a pipeline or piping system goes into service. Hydro plans and executes cleaning, flushing, filling, hydrotesting, leak testing, dewatering support, filtration, disinfection and chemical cleaning to the system type and project specification — and documents every result.",
@@ -58,9 +58,9 @@ export const solutionPages: DetailPage[] = [
     title: "Chilled water flushing for district cooling.",
     lead: "Engineered flushing, side-stream filtration, chemical treatment and hydrotesting for district cooling networks, ETS connections and DCP internal systems.",
     image: u("1620203853151-496c7228306c"),
-    metaTitle: "District Cooling Flushing, ETS Works & Chilled Water Flushing in UAE",
+    metaTitle: "Chilled Water Flushing & District Cooling UAE",
     metaDescription:
-      "Chilled water flushing for district cooling networks in the UAE: flushing velocity planning, temporary pumps, side-stream filtration, ETS mechanical works, DCP piping and filter cleaning, CHW chemical treatment and hydrotesting.",
+      "Chilled water flushing for district cooling networks, ETS and DCP systems in the UAE — side-stream filtration, chemical treatment and hydrotesting.",
     introTitle: "Clean networks. Stable delta-T. On-time commissioning.",
     intro:
       "District cooling and chilled water systems need a high level of cleanliness, hydraulic readiness and chemical control. Poor flushing leads to clogged strainers, fouled heat exchangers, poor delta-T, pump damage, corrosion and commissioning delays. Hydro develops the flushing strategy from pipe size, system volume, access points and bypass requirements, then executes and reports it.",
@@ -81,9 +81,9 @@ export const solutionPages: DetailPage[] = [
     title: "Factory utilities & industrial process engineering.",
     lead: "Warehouse-to-factory conversions, process piping and compressed air, water, steam, gas and chemical utilities — built and commissioned.",
     image: u("1538474705339-e87de81450e8"),
-    metaTitle: "Factory Utility Installation, Boiler Cleaning & Heavy Fuel Line Flushing UAE",
+    metaTitle: "Factory Utilities & Boiler Cleaning UAE",
     metaDescription:
-      "Industrial process engineering in the UAE: warehouse-to-factory conversion, factory utility construction and commissioning, process piping, compressed air, steam and gas utilities, industrial boiler cleaning, heavy fuel line flushing and paint rooms.",
+      "Factory conversions, process piping and compressed air, steam, gas and water utilities, plus boiler and heavy fuel line cleaning across the UAE.",
     introTitle: "From empty warehouse to operating factory.",
     intro:
       "Hydro delivers the utility networks, process piping and mechanical connections that manufacturing and process facilities depend on — and supports relocation, recommissioning and shutdown work on existing plants.",
@@ -104,9 +104,9 @@ export const solutionPages: DetailPage[] = [
     title: "Water, wastewater & environmental process solutions.",
     lead: "RO and STP installation and commissioning support, contaminated water treatment, desalination support and modular treatment packages.",
     image: statementImage,
-    metaTitle: "RO Plant Commissioning, STP Installation & Contaminated Water Treatment UAE",
+    metaTitle: "STP, RO & Wastewater Treatment UAE",
     metaDescription:
-      "Water and wastewater process solutions in the UAE: RO plant installation and commissioning, sewage treatment plant (STP) installation, industrial contaminated water treatment, desalination support, manual and automatic chemical dosing and containerised plants.",
+      "Sewage treatment plants (MBR, SBR, MBBR), RO systems, grey water recycling and wastewater AMC in the UAE — supplied, commissioned and maintained.",
     introTitle: "Treatment systems, installed and commissioned properly.",
     intro:
       "Hydro supports water and wastewater systems from installation through commissioning — and treats contaminated and process water on site with temporary filtration, phase separation and dosing packages when a permanent plant is not yet in place.",
@@ -127,9 +127,9 @@ export const solutionPages: DetailPage[] = [
     title: "Process plant EPC & industrial infrastructure.",
     lead: "Integrated engineering, procurement, construction, installation, testing and commissioning for process plants and utility infrastructure.",
     image: heroImage,
-    metaTitle: "Process Plant EPC, Storage Tanks & Industrial Infrastructure in UAE",
+    metaTitle: "Process Plant EPC & Storage Tanks UAE",
     metaDescription:
-      "Process plant EPC in the UAE: storage tank design and installation, process piping and utility connections, civil foundations, structural steel platforms and pipe supports, E&I coordination, hygienic process factories, testing, commissioning and retrofit.",
+      "Process plant EPC in the UAE: storage tanks, piping, structural steel, E&I coordination and plant retrofits delivered by one accountable team.",
     introTitle: "One partner from foundations to commissioning.",
     intro:
       "For process plants and industrial utility infrastructure, Hydro brings engineering, procurement and construction together with the testing and commissioning discipline of our pre-commissioning teams.",
@@ -149,9 +149,9 @@ export const solutionPages: DetailPage[] = [
     title: "Industrial cleaning, hydro-demolition & surface engineering.",
     lead: "High-pressure and UHP water jetting, concrete hydro-cutting, heat exchanger cleaning, blasting and coating for industrial assets.",
     image: "/images/divisions/industrial-cleaning.webp",
-    metaTitle: "UHP Water Jetting, Hydro-Demolition & Heat Exchanger Cleaning UAE",
+    metaTitle: "UHP Water Jetting & Hydro-Demolition UAE",
     metaDescription:
-      "Industrial cleaning in the UAE: aquajetting, high-pressure and ultra-high-pressure water jetting, concrete hydro-demolition and hydro-cutting, heat exchanger and condenser tube cleaning, sand and wet abrasive blasting and protective coating.",
+      "UHP water jetting, hydro-demolition, heat exchanger cleaning, blasting and coating for industrial assets across the UAE. Request a method today.",
     introTitle: "Restore performance. Prepare surfaces. Remove concrete with control.",
     intro:
       "Using high-pressure and ultra-high-pressure water systems, wet abrasive systems and specialised tools, Hydro supports shutdowns, maintenance, retrofit works, civil repair, mechanical cleaning, surface preparation and industrial asset restoration.",
@@ -170,9 +170,9 @@ export const solutionPages: DetailPage[] = [
     title: "Chemical cleaning, passivation & water chemistry.",
     lead: "Chemical cleaning, disinfection, pickling and passivation, corrosion mitigation, contamination control and water chemistry management.",
     image: productRanges[1].image,
-    metaTitle: "Chemical Cleaning, Passivation, Biocide & CHW Chemical Treatment in UAE",
+    metaTitle: "Chemical Cleaning & CHW Treatment UAE",
     metaDescription:
-      "Chemical engineering solutions in the UAE: chemical cleaning of pipelines, chemical pickling and passivation, disinfection, chilled water chemical treatment, corrosion and scale control, biocide treatment, pH neutralization and chemical supply.",
+      "Chemical cleaning, passivation, biocide and corrosion control for chilled water, cooling tower and boiler systems in the UAE. Talk to our engineers.",
     introTitle: "The chemistry is chosen for the system — not the other way round.",
     intro:
       "Every chemical strategy is selected on system material, contamination type, process risk, operating requirement, client specification and disposal constraints — and compatibility with pipe materials, gaskets, seals and coatings is checked before anything is dosed.",
@@ -194,9 +194,9 @@ export const solutionPages: DetailPage[] = [
     title: "Engineered equipment — assembled, sold and rented.",
     lead: "Pump packages, flushing and filtration skids, hydrotest pumps, generators, compressors and tanks — selected, integrated and supported to the hydraulic requirement.",
     image: "/images/divisions/equipment-rental.webp",
-    metaTitle: "Engineered Pump Packages, Flushing Skids & Industrial Equipment Rental UAE",
+    metaTitle: "Pump Packages & Flushing Skids UAE",
     metaDescription:
-      "Equipment engineering in the UAE: engineered pump packages, diesel and electric pump assemblies, flushing and filtration skid rental, hydrotest pump rental, generator and air compressor rental, dewatering and UHP pumps, tanks and water-jetting equipment.",
+      "Engineered pump packages, flushing and filtration skids, hydrotest pumps and generators — assembled, sold and rented in the UAE with technicians.",
     introTitle: "Not simply rented — engineered for the job.",
     intro:
       "Unlike conventional rental providers, Hydro supports clients with equipment selection, integration, assembly, operator support, maintenance and performance-oriented deployment, backed by in-house skid fabrication and pump workshop capability.",
@@ -218,9 +218,9 @@ export const productPages: DetailPage[] = [
     title: "Equipment sales & rental fleet.",
     lead: "Project-ready pumps, skids, generators, compressors and tanks for flushing, testing, filtration, dewatering, air and power — with technicians and operators.",
     image: "/images/divisions/equipment-fleet.webp",
-    metaTitle: "Pump Rental UAE — Diesel Pumps, Flushing & Filtration Skids, Generators",
+    metaTitle: "Pump & Flushing Equipment Rental UAE",
     metaDescription:
-      "Equipment rental and sales in the UAE: diesel pump rental, flushing skid and filtration skid rental, hydrotest pump rental, generator and air compressor rental, dewatering and submersible pumps, UHP pumps, tanks, hoses and manifolds.",
+      "Rent diesel and electric pumps, flushing and filtration skids, generators, compressors and tanks in the UAE — mobilised with trained operators.",
     introTitle: "Equipment categories.",
     intro:
       "Every package is checked in our warehouse before mobilization and can be supplied with operators, technicians and maintenance support for the duration of the job.",
@@ -241,9 +241,9 @@ export const productPages: DetailPage[] = [
     title: "Cleaning & treatment chemicals.",
     lead: "Flushing, cleaning, pickling, passivation, biocide and corrosion-control chemistry — supplied, dosed and handled safely.",
     image: "/images/divisions/chemicals-supply.webp",
-    metaTitle: "Flushing Chemicals, CHW Treatment & Chemical Supply in UAE",
+    metaTitle: "Water Treatment Chemicals Supplier UAE",
     metaDescription:
-      "Chemical supply in the UAE for flushing and chemical cleaning, descaling, degreasing, pickling and passivation, biocide and disinfection, neutralization and corrosion control — plus chilled water, boiler, cooling tower and RO treatment chemicals.",
+      "Flushing, chilled water, boiler, cooling tower and RO chemicals plus Pulsafeeder dosing systems, supplied and dosed safely across the UAE.",
     introTitle: "Chemistry with handling discipline.",
     intro:
       "Chemicals are stored and traded subject to statutory and project requirements, handled with PPE and SDS controls, and neutralized and disposed of responsibly after use.",

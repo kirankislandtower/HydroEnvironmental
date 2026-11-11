@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ChemicalCatalogue, ChemicalFunctions, GroupFleet, PageHero } from "@/components/sections/Sections";
 import { references } from "@/lib/content";
+import { ldJson, serviceData } from "@/lib/seo";
 import type { DetailPage } from "@/lib/pages";
 
 // Layout for every dropdown page (Solutions/* and Products/*) — a technical "spec sheet",
@@ -15,6 +16,7 @@ export default function DetailView({ page, siblings, base, section }: { page: De
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(serviceData({ name: page.metaTitle, type: page.nav, description: page.metaDescription, path: `${base}/${page.slug}` })) }} />
       <PageHero
         variant="split"
         crumb={page.nav}

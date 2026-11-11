@@ -9,9 +9,9 @@ const recent = references.filter((r) => !r.historic).length;
 const historic = references.length - recent;
 
 export const metadata: Metadata = {
-  title: "Projects & References — Chilled Water Flushing & Pre-Commissioning UAE",
+  title: "Projects & References — Flushing UAE",
   description:
-    "Hydro project references across the UAE — Beeah HQ, Etihad Rail, JLT district cooling plants, Expo 2020 pavilions, Hessa Tower and more — plus Island Tower Group flushing experience on Mall of the Emirates, DIFC, Palm Jumeirah DCP and Empower plants.",
+    "Hydro project references across the UAE — Beeah HQ, Etihad Rail, JLT district cooling, Expo 2020 pavilions and Hessa Tower — with exact scope.",
   alternates: { canonical: "/projects" },
 };
 
