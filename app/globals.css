@@ -723,7 +723,8 @@ body { font-weight: 300; }
 /* Navbar — reference style: full-width bar (64px gutters), transparent over dark sections,
    light glass bar only over light sections */
 .site-header .bar.wrap { max-width: none; padding: 0 64px; }
-.site-header.scrolled { background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: none; }
+/* scrolled over dark sections: a dark frosted bar, so page content never shows through the logo/nav */
+.site-header.scrolled { background: rgba(10,29,51,.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(255,255,255,.06); }
 .site-header.scrolled .bar { height: 92px; }
 .site-header.light { background: rgba(244, 247, 245, .88); backdrop-filter: blur(16px) saturate(140%); -webkit-backdrop-filter: blur(16px) saturate(140%); box-shadow: 0 1px 0 rgba(10, 29, 51, .08); }
 .nav > li > a { font-size: 13px; letter-spacing: .2em; }

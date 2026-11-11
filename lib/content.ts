@@ -4,7 +4,8 @@
 // + Island Tower Electromechanical "Flushing Prequalification" (group flushing track record & fleet — shown as GROUP experience).
 // Items marked TODO need confirmation before launch.
 
-const u = (id: string, w = 1400) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
+// Full-bleed banners are capped at 1920 px; Unsplash serves AVIF/WebP via auto=format
+const u = (id: string, w = 1400) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${Math.min(w, 1920)}&q=70`;
 
 export const company = {
   // Legal name per trade licence (the new profile prints "Hydro Engineering & Environmental" — licence order kept on purpose)
@@ -14,9 +15,25 @@ export const company = {
   positioning: "We do not merely install systems — we engineer performance, reliability and operational certainty.",
   identity: "Chem-mechanical process engineering",
   established: "2008",
-  // TODO: confirm current number (04-2573677 vs 06-545 3318) and office — new profile says Dubai, licence says Sharjah
-  phone: "+971 4 257 3677",
-  phoneHref: "tel:+97142573677",
+  // TODO: confirm office — new profile says Dubai, licence says Sharjah
+  phone: "+971 54 305 8357",
+  phoneHref: "tel:+971543058357",
+  // Pre-filled WhatsApp message, written from the client's side — they fill in the blanks
+  whatsappHref: `https://wa.me/971543058357?text=${encodeURIComponent(
+    [
+      "Hello Hydro Environmental team,",
+      "",
+      "I'd like to enquire about your services for a project.",
+      "",
+      "Name / Company: ",
+      "Service needed (e.g. CHW flushing, hydrotesting, chemical cleaning, equipment rental): ",
+      "Project location: ",
+      "System details (pipe size / volume): ",
+      "Required start date: ",
+      "",
+      "Please share a method and quotation. Thank you.",
+    ].join("\n"),
+  )}`,
   email: "info@heesllc.ae",
   website: "www.heesllc.ae",
   location: ["Al Sajaa Industrial Area, Sharjah", "P.O. Box 61204, UAE"],
@@ -85,15 +102,16 @@ export const manifesto = [
 ];
 
 // Engineering methodology — profile p.8 (8 stages). Used by the horizontal journey and /solutions.
+// Stage photos: Pexels (free licence), resized into public/images/stages
 export const chapters = [
-  { n: "01", title: "Technical assessment", text: "Drawings, pipe sizes, materials, volumes, design and operating pressure, flow, contamination risk, chemical compatibility and acceptance criteria are reviewed first.", tag: "Engineering before execution.", image: u("1568487007364-175e0d26233b", 1200) },
-  { n: "02", title: "Method engineering", text: "Method statement, ITP, flushing or cleaning sequence, hydrotest procedure, chemical plan, equipment layout, hose route, filtration stages and safety controls.", tag: "Every step written down.", image: u("1533077162801-86490c593afb", 1200) },
-  { n: "03", title: "Equipment sizing", text: "Pumps, filters, strainers, tanks, generators, compressors, manifolds, gauges and chart recorders selected on flow, head, pressure, solids loading and duration.", tag: "Correct equipment, not available equipment.", image: u("1607472586893-edb57bdc0e39", 1200) },
-  { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilised to site.", tag: "Ready from our warehouse to your site.", image: u("1579525612525-053cd3e8cbd7", 1200) },
-  { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure and leak testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: u("1620203853151-496c7228306c", 1200) },
-  { n: "06", title: "Monitoring & validation", text: "Flow, pressure, turbidity, filter differential pressure, test duration, leakage, chemical parameters and client witness points are monitored throughout.", tag: "Measured, not assumed.", image: u("1644389355109-15b26f71c36b", 1200) },
-  { n: "07", title: "Documentation & handover", text: "Reports, test records, pressure charts, flushing and chemical records, photographs, equipment logs and completion certificates.", tag: "Evidence for acceptance.", image: u("1526599256864-6bedb9d7dfb5", 1200) },
-  { n: "08", title: "Optimization & support", text: "Commissioning support, troubleshooting, additional filtration, chemical adjustment, balancing assistance, temporary utilities and maintenance follow-up.", tag: "Beyond completion — to reliable operation.", image: u("1533163238111-4a7ced54f2e4", 1200) },
+  { n: "01", title: "Technical assessment", text: "Drawings, pipe sizes, materials, volumes, design and operating pressure, flow, contamination risk, chemical compatibility and acceptance criteria are reviewed first.", tag: "Engineering before execution.", image: "/images/stages/01-technical-assessment.webp" },
+  { n: "02", title: "Method engineering", text: "Method statement, ITP, flushing or cleaning sequence, hydrotest procedure, chemical plan, equipment layout, hose route, filtration stages and safety controls.", tag: "Every step written down.", image: "/images/stages/02-method-engineering.webp" },
+  { n: "03", title: "Equipment sizing", text: "Pumps, filters, strainers, tanks, generators, compressors, manifolds, gauges and chart recorders selected on flow, head, pressure, solids loading and duration.", tag: "Correct equipment, not available equipment.", image: "/images/stages/03-equipment-sizing.webp" },
+  { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilised to site.", tag: "Ready from our warehouse to your site.", image: "/images/stages/04-site-mobilization.webp" },
+  { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure and leak testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: "/images/stages/05-controlled-execution.webp" },
+  { n: "06", title: "Monitoring & validation", text: "Flow, pressure, turbidity, filter differential pressure, test duration, leakage, chemical parameters and client witness points are monitored throughout.", tag: "Measured, not assumed.", image: "/images/stages/06-monitoring-validation.webp" },
+  { n: "07", title: "Documentation & handover", text: "Reports, test records, pressure charts, flushing and chemical records, photographs, equipment logs and completion certificates.", tag: "Evidence for acceptance.", image: "/images/stages/07-documentation-handover.webp" },
+  { n: "08", title: "Optimization & support", text: "Commissioning support, troubleshooting, additional filtration, chemical adjustment, balancing assistance, temporary utilities and maintenance follow-up.", tag: "Beyond completion — to reliable operation.", image: "/images/stages/08-optimization-support.webp" },
 ];
 
 // Core business divisions — profile pp.5–7 (with handwritten edits: Chemical Pickling replaces flange management;
@@ -274,14 +292,14 @@ export const productRanges = [
     text: "Engineered pump packages, diesel and electric pumps, flushing and filtration skids, hydrotest pumps, generators, compressors, dewatering pumps, tanks and water-jetting equipment — selected, assembled and supported by our technicians.",
     tags: ["Pump packages", "Flushing skids", "Filtration skids", "Generators", "Compressors", "UHP"],
     link: "View the fleet",
-    image: u("1579525612525-053cd3e8cbd7", 1100),
+    image: "/images/products/sales-rental-fleet.webp",
   },
   {
     n: "02", id: "chemicals", title: "Chemicals & Supply",
     text: "Flushing, cleaning, descaling, passivation, biocide and corrosion-control chemistry, plus dosing system support — chosen for the pipe material, contamination type and disposal constraints.",
     tags: ["Cleaning", "Descaling", "Passivation", "Biocide", "Corrosion control", "Dosing"],
     link: "View chemicals",
-    image: u("1526599256864-6bedb9d7dfb5", 1100),
+    image: "/images/products/chemicals-supply.webp",
   },
 ];
 

@@ -2,7 +2,7 @@
 // hero → arc statement → "Every system" → journey (horizontal) → feature → band → stacked steps → where we work → reach us.
 // Images: Unsplash (free licence), illustrative only — swap for HEES site photos when available.
 
-const u = (id: string, w = 1400) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
+const u = (id: string, w = 1400) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${Math.min(w, 1920)}&q=70`;
 
 export const everySystem = {
   title: "Every process",
@@ -17,7 +17,7 @@ export const feature = {
   label: "Chem-mechanical process engineering",
   title: ["Engineering,", "equipment and", "chemistry — as one."],
   text: "Hydro combines chemical engineering, mechanical execution, fluid dynamics and project-ready equipment to solve problems of flow, pressure, contamination, corrosion and system integrity — across eight specialist divisions.",
-  image: u("1519455953755-af066f52f1a6", 1200),
+  image: "/images/home/feature-water.webp",
   chips: ["Flush · Test · Commission", "8 divisions · Since 2008"],
 };
 
@@ -47,7 +47,7 @@ export const steps = [
   {
     n: "04", chip: "Equipment & rental", title: "Engineered equipment, on call.",
     text: "Pump packages, diesel and electric pumps, flushing and filtration skids, hydrotest pumps, generators, compressors and tanks — with operators.",
-    href: "/products/equipment", image: u("1579525612525-053cd3e8cbd7"),
+    href: "/products/equipment", image: "/images/divisions/equipment-rental.webp",
   },
 ];
 
@@ -56,27 +56,27 @@ export const places = [
   {
     kicker: "District cooling", title: "Networks that hold their delta-T.",
     text: "Chilled water flushing, ETS works, DCP piping support, side-stream filtration and hydrotesting.",
-    chip: "JLT DCP 1, 3 & 4 · CHW flushing", image: u("1556695736-d287caebc48e"),
+    chip: "JLT DCP 1, 3 & 4 · CHW flushing", image: "/images/sectors/district-cooling.webp",
   },
   {
     kicker: "Commercial & buildings", title: "Towers commissioned on time.",
     text: "Building CHW flushing, chemical treatment, automatic dosing and pump systems.",
-    chip: "Hessa Tower · CHW flushing", image: u("1579525612525-053cd3e8cbd7"),
+    chip: "Hessa Tower · CHW flushing", image: "/images/sectors/commercial-buildings.webp",
   },
   {
     kicker: "Industry & manufacturing", title: "Process utilities, under control.",
     text: "Factory utilities, process piping, boiler cleaning, wastewater and industrial cleaning.",
-    chip: "Union Paper Mills · Wastewater", image: u("1538474705339-e87de81450e8"),
+    chip: "Union Paper Mills · Wastewater", image: "/images/sectors/industry-manufacturing.webp",
   },
   {
     kicker: "Water & wastewater", title: "Treatment plants, commissioned right.",
     text: "RO and STP installation and commissioning support, contaminated water and dosing.",
-    chip: "Al Rakha · 300 m³/day STP", image: u("1572331165267-854da2b10ccc"),
+    chip: "Al Rakha · 300 m³/day STP", image: "/images/sectors/water-wastewater.webp",
   },
   {
     kicker: "Infrastructure", title: "Built for the scale of the UAE.",
     text: "Rail, metro, utility corridors and landmark developments — flushed, tested and documented.",
-    chip: "Etihad Rail · Flushing & treatment", image: u("1538108149393-fbbd81895907"),
+    chip: "Etihad Rail · Flushing & treatment", image: "/images/sectors/infrastructure.webp",
   },
 ];
 

@@ -3,7 +3,8 @@
 // rewritten for the web. Group fleet from Island Tower Electromechanical's flushing PQ (labelled as group).
 import { productRanges, statementImage, heroImage, ctaImage } from "./content";
 
-const u = (id: string, w = 2000) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
+// Division hero panels are ~520 CSS px wide, so 1200 covers 2x screens; Unsplash serves AVIF/WebP via auto=format
+const u = (id: string, w = 1200) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${Math.min(w, 1920)}&q=70`;
 
 export type Block = { title: string; text: string; items?: string[] };
 
@@ -25,6 +26,7 @@ export type DetailPage = {
   refsMatch?: RegExp; // pulls matching rows from Hydro's own reference list
 };
 
+// Local hero photos in public/images/divisions are from Pexels (free licence)
 export const solutionPages: DetailPage[] = [
   {
     slug: "process-pipeline-engineering",
@@ -146,7 +148,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 06 · Industrial cleaning & hydro-demolition",
     title: "Industrial cleaning, hydro-demolition & surface engineering.",
     lead: "High-pressure and UHP water jetting, concrete hydro-cutting, heat exchanger cleaning, blasting and coating for industrial assets.",
-    image: u("1556695736-d287caebc48e"),
+    image: "/images/divisions/industrial-cleaning.webp",
     metaTitle: "UHP Water Jetting, Hydro-Demolition & Heat Exchanger Cleaning UAE",
     metaDescription:
       "Industrial cleaning in the UAE: aquajetting, high-pressure and ultra-high-pressure water jetting, concrete hydro-demolition and hydro-cutting, heat exchanger and condenser tube cleaning, sand and wet abrasive blasting and protective coating.",
@@ -191,7 +193,7 @@ export const solutionPages: DetailPage[] = [
     eyebrow: "Division 08 · Equipment engineering, assembly, sales & rental",
     title: "Engineered equipment — assembled, sold and rented.",
     lead: "Pump packages, flushing and filtration skids, hydrotest pumps, generators, compressors and tanks — selected, integrated and supported to the hydraulic requirement.",
-    image: productRanges[0].image,
+    image: "/images/divisions/equipment-rental.webp",
     metaTitle: "Engineered Pump Packages, Flushing Skids & Industrial Equipment Rental UAE",
     metaDescription:
       "Equipment engineering in the UAE: engineered pump packages, diesel and electric pump assemblies, flushing and filtration skid rental, hydrotest pump rental, generator and air compressor rental, dewatering and UHP pumps, tanks and water-jetting equipment.",
@@ -215,7 +217,7 @@ export const productPages: DetailPage[] = [
     eyebrow: "Equipment · Sales & rental",
     title: "Equipment sales & rental fleet.",
     lead: "Project-ready pumps, skids, generators, compressors and tanks for flushing, testing, filtration, dewatering, air and power — with technicians and operators.",
-    image: productRanges[0].image,
+    image: "/images/divisions/equipment-fleet.webp",
     metaTitle: "Pump Rental UAE — Diesel Pumps, Flushing & Filtration Skids, Generators",
     metaDescription:
       "Equipment rental and sales in the UAE: diesel pump rental, flushing skid and filtration skid rental, hydrotest pump rental, generator and air compressor rental, dewatering and submersible pumps, UHP pumps, tanks, hoses and manifolds.",
@@ -238,7 +240,7 @@ export const productPages: DetailPage[] = [
     eyebrow: "Equipment · Chemicals",
     title: "Cleaning & treatment chemicals.",
     lead: "Flushing, cleaning, pickling, passivation, biocide and corrosion-control chemistry — supplied, dosed and handled safely.",
-    image: productRanges[1].image,
+    image: "/images/divisions/chemicals-supply.webp",
     metaTitle: "Flushing Chemicals, CHW Treatment & Chemical Supply in UAE",
     metaDescription:
       "Chemical supply in the UAE for flushing and chemical cleaning, descaling, degreasing, pickling and passivation, biocide and disinfection, neutralization and corrosion control — plus chilled water, boiler, cooling tower and RO treatment chemicals.",

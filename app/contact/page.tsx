@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import InnerPage from "@/components/InnerPage";
 import ContactForm from "@/components/ContactForm";
+import QuickContact from "@/components/QuickContact";
 import { PageHero } from "@/components/sections/Sections";
 import { company, contactImage } from "@/lib/content";
 import { reach } from "@/lib/landing";
@@ -62,6 +63,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <QuickContact />
     </InnerPage>
   );
 }
