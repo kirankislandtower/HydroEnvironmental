@@ -148,7 +148,7 @@ export default function Header() {
         </ol>
         <div className="mnav-foot">
           <a href={company.phoneHref}>{company.phone}</a>
-          <a href={`mailto:${company.email}`}>{company.email}</a>
+          <a href={company.emailHref}>{company.email}</a>
         </div>
       </div>
     </>

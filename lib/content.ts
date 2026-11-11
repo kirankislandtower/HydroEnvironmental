@@ -19,6 +19,24 @@ export const company = {
   phone: "+971 54 305 8357",
   phoneHref: "tel:+971543058357",
   // Pre-filled WhatsApp message, written from the client's side — they fill in the blanks
+  // Pre-filled enquiry email (opens the visitor's mail app), written from the client's side
+  emailHref: `mailto:info@heesllc.ae?subject=${encodeURIComponent("Project enquiry — via heesllc.ae")}&body=${encodeURIComponent(
+    [
+      "Hello Hydro Environmental team,",
+      "",
+      "I'd like to enquire about your services for a project.",
+      "",
+      "Name / Company: ",
+      "Phone: ",
+      "Service needed (e.g. CHW flushing, hydrotesting, chemical cleaning, equipment rental): ",
+      "Project location: ",
+      "System details (pipe size / volume): ",
+      "Required start date: ",
+      "",
+      "Please share a method and quotation. Thank you.",
+    ].join("\n"),
+  )}`,
+  mapsHref: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Al Sajaa Industrial Area, Sharjah, UAE")}`,
   whatsappHref: `https://wa.me/971543058357?text=${encodeURIComponent(
     [
       "Hello Hydro Environmental team,",

@@ -33,7 +33,7 @@ export default function ContactPage() {
             <p className="ct-lead">Our engineers support consultants, contractors and facility teams across all seven emirates.</p>
             <ul className="ct-lines">
               <li><small>Call</small><a className="serif" href={company.phoneHref}>{company.phone}</a></li>
-              <li><small>Email</small><a className="serif" href={`mailto:${company.email}`}>{company.email}</a></li>
+              <li><small>Email</small><a className="serif" href={company.emailHref}>{company.email}</a></li>
               <li><small>Office</small><span>{company.location.join(", ")}</span></li>
             </ul>
             <p className="ct-group">Part of {company.group}</p>

@@ -348,7 +348,7 @@ export function CallToAction() {
         <h2 className="serif">Let’s make your system <em>commissioning-ready.</em></h2>
         <p>Tell us the system type, pipe sizes or volume, location and scope. Our engineers will propose the method and equipment package.</p>
         <div className="actions">
-          <a className="btn btn-solid" href={`mailto:${company.email}`} data-magnetic>Discuss your project →</a>
+          <a className="btn btn-solid" href={company.emailHref} data-magnetic>Discuss your project →</a>
           <a className="btn btn-line" href={company.phoneHref}>Call {company.phone}</a>
         </div>
       </div>
@@ -358,9 +358,9 @@ export function CallToAction() {
 
 export function ContactStrip() {
   const items = [
-    { label: "Location", value: company.location },
-    { label: "Call us", value: [company.phone] },
-    { label: "Email us", value: [company.email] },
+    { label: "Location", value: company.location, href: company.mapsHref, external: true },
+    { label: "Call us", value: [company.phone], href: company.phoneHref },
+    { label: "Email us", value: [company.email], href: company.emailHref },
     { label: "Part of", value: ["Island Tower", "Group of Companies"] },
   ];
   return (
@@ -369,7 +369,13 @@ export function ContactStrip() {
         {items.map((it) => (
           <div className="c-item" key={it.label}>
             <span className="label aqua">{it.label}</span>
-            <p>{it.value.map((v, i) => <span key={v}>{i > 0 && <br />}{v}</span>)}</p>
+            {it.href ? (
+              <a className="c-link" href={it.href} {...(it.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+                <p>{it.value.map((v, i) => <span key={v}>{i > 0 && <br />}{v}</span>)}</p>
+              </a>
+            ) : (
+              <p>{it.value.map((v, i) => <span key={v}>{i > 0 && <br />}{v}</span>)}</p>
+            )}
           </div>
         ))}
       </div>

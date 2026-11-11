@@ -253,6 +253,12 @@ body.menu-open .qc { display: none; }
 @media (max-width: 600px) { .qc { gap: 10px; } .qc-ico { width: 52px; height: 52px; } .qc-label { display: none; } }
 @media (prefers-reduced-motion: reduce) { .qc-wa .qc-ico::after { animation: none; display: none; } }
 
+/* contact strip: location / phone / email are links */
+.c-link { display: block; color: inherit; text-decoration: none; transition: color .25s; }
+.c-link:hover, .c-link:focus-visible { color: var(--color-aqua); }
+.c-link p { transition: transform .35s var(--ease-x); }
+.c-link:hover p { transform: translateX(4px); }
+
 /* ---------- Legal / 404 ---------- */
 .legal { background: var(--color-paper); color: var(--color-ink); padding: 100px 0 120px; }
 .legal-body { max-width: 760px; }

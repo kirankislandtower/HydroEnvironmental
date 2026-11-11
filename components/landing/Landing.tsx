@@ -208,7 +208,7 @@ export function Reach() {
             <a className="rc-card" href={company.phoneHref}>
               <span className="rc-k">Call us</span><b>{company.phone}</b>
             </a>
-            <a className="rc-card" href={`mailto:${company.email}`}>
+            <a className="rc-card" href={company.emailHref}>
               <span className="rc-k">Email us</span><b>{company.email}</b>
             </a>
             <div className="rc-card">
