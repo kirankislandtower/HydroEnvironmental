@@ -368,7 +368,7 @@ export const faqs = [
 export const footerLinks = [
   { heading: "Divisions", links: [["Process & pipeline", "/solutions/process-pipeline-engineering"], ["District cooling", "/solutions/district-cooling"], ["Industrial utilities", "/solutions/industrial-process-utilities"], ["Water & wastewater", "/solutions/water-wastewater"], ["Industrial cleaning", "/solutions/industrial-cleaning"], ["Chemical treatment", "/solutions/chemical-treatment"]] },
   { heading: "Equipment", links: [["Sales & rental fleet", "/products/equipment"], ["Chemicals & supply", "/products/chemicals"], ["Equipment engineering", "/solutions/equipment-engineering"], ["Resources", "/resources"]] },
-  { heading: "Company", links: [["About", "/about"], ["Projects", "/projects"], ["Contact", "/contact"], ["Privacy", "/privacy"]] },
+  { heading: "Company", links: [["About", "/about"], ["Projects", "/projects"], ["Contact", "/contact#contact"], ["Privacy", "/privacy"]] },
 ] as const;
 
 export const heroVideo = "";

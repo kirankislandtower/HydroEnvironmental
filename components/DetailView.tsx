@@ -39,7 +39,7 @@ export default function DetailView({ page, siblings, base, section }: { page: De
               <div><b className="serif">{pad(page.blocks.length)}</b><span>Service lines</span></div>
               {related.length > 0 && <div><b className="serif">{pad(related.length)}</b><span>Related references</span></div>}
             </div>
-            <Link className="btn btn-dark" href="/contact">Discuss this scope →</Link>
+            <Link className="btn btn-dark" href="/contact#contact">Discuss this scope →</Link>
           </aside>
           {page.blocks.length > 0 && (
             <ol className="spec-list">

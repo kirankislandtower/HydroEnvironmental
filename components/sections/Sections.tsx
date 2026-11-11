@@ -320,7 +320,7 @@ export function Resources() {
         </div>
         <div className="lib-grid">
           {documents.map((d, i) => (
-            <Link className="lib-tile fx-card" href="/contact" key={d.title}>
+            <Link className="lib-tile fx-card" href="/contact#contact" key={d.title}>
               <span className="lib-no">{String(i + 1).padStart(2, "0")}</span>
               <svg className="lib-ico" viewBox="0 0 48 56" width="44" height="52" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
                 <path d="M6 2h26l12 12v38a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" /><path d="M32 2v12h12" /><path d="M13 28h22M13 36h22M13 44h14" />

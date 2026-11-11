@@ -68,7 +68,7 @@ export function Feature() {
           <p className="ft-p">{feature.text}</p>
           <div className="ft-actions">
             <Link className="btn btn-solid" href="/solutions" data-magnetic>Explore divisions <span className="arr">→</span></Link>
-            <Link className="btn btn-ghost" href="/contact">Contact us</Link>
+            <Link className="btn btn-ghost" href="/contact#contact">Contact us</Link>
           </div>
         </div>
         <div className="ft-visual" aria-hidden="true">
@@ -194,7 +194,7 @@ export function Reach() {
         <h2 className="serif rc-title">{reach.title} <em>{reach.accent}</em></h2>
         <p className="rc-p">{reach.text}</p>
         <div className="rc-actions">
-          <Link className="btn rc-btn-light" href="/contact" data-magnetic>Contact us <span className="arr">→</span></Link>
+          <Link className="btn rc-btn-light" href="/contact#contact" data-magnetic>Contact us <span className="arr">→</span></Link>
           <a className="btn rc-btn-green" href={company.phoneHref}>Call {company.phone}</a>
         </div>
         <div className="rc-grid">

@@ -117,7 +117,7 @@ export default function Header() {
                 );
               })}
               <li>
-                <a className={`nav-contact${pathname === "/contact" ? " on" : ""}`} href="/contact" data-magnetic>Contact</a>
+                <a className={`nav-contact${pathname === "/contact" ? " on" : ""}`} href="/contact#contact" data-magnetic>Contact</a>
               </li>
             </ul>
           </nav>
@@ -138,7 +138,7 @@ export default function Header() {
           </button>
         </div>
         <ol>
-          {[...navLinks, { label: "Contact", href: "/contact" }].map((item, i) => (
+          {[...navLinks, { label: "Contact", href: "/contact#contact" }].map((item, i) => (
             <li key={item.label} style={{ transitionDelay: open ? `${0.08 + i * 0.05}s` : "0s" }}>
               <a href={item.href} onClick={() => setOpen(false)}>
                 {item.label} <small>{String(i + 1).padStart(2, "0")}</small>

@@ -19,7 +19,7 @@ export default function NotFound() {
         <div className="wrap legal-links">
           <Link className="btn btn-dark" href="/">Back to home →</Link>
           <Link className="btn btn-line-dark" href="/solutions">Our divisions</Link>
-          <Link className="btn btn-line-dark" href="/contact">Contact us</Link>
+          <Link className="btn btn-line-dark" href="/contact#contact">Contact us</Link>
         </div>
       </section>
     </InnerPage>
