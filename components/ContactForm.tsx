@@ -14,10 +14,34 @@ export default function ContactForm() {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
     const get = (k: string) => String(f.get(k) ?? "").trim();
-    const subject = `Website enquiry — ${get("topic") || "General"}`;
+    const topic = get("topic") || "General enquiry";
+    const who = get("company") ? `${get("name")} (${get("company")})` : get("name");
+    const subject = `Project enquiry: ${topic}${get("location") ? ` — ${get("location")}` : ""} | ${who}`;
+    // Written as a client email: greeting, their message, then the details the team needs to quote.
+    // Empty optional fields are left out instead of showing blank labels.
+    const details = [
+      ["Service", topic],
+      ["Project location", get("location")],
+      ["Company", get("company")],
+      ["Phone", get("phone")],
+      ["Email", get("email")],
+    ].filter(([, v]) => v).map(([k, v]) => `• ${k}: ${v}`);
     const body = [
-      `Name: ${get("name")}`, `Company: ${get("company")}`, `Email: ${get("email")}`, `Phone: ${get("phone")}`,
-      `Project location: ${get("location")}`, "", get("message"),
+      "Hello Hydro Environmental team,",
+      "",
+      get("message"),
+      "",
+      "Project details:",
+      ...details,
+      "",
+      "Please share a suitable method and quotation.",
+      "",
+      "Kind regards,",
+      get("name"),
+      ...(get("company") ? [get("company")] : []),
+      ...(get("phone") ? [get("phone")] : []),
+      "",
+      "— Sent from the enquiry form on heesllc.ae",
     ].join("\n");
     window.location.href = `mailto:${company.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSent(true);
