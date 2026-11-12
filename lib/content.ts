@@ -156,7 +156,7 @@ export const capabilities = [
     items: ["Industrial contaminated water treatment", "RO plant installation & commissioning", "STP installation & commissioning", "Desalination plant support", "Manual & automatic chemical dosing", "Modular / containerized plants"],
   },
   {
-    n: "05", title: "Process Plant & Infrastructure", id: "epc", href: "/solutions/process-plant-infrastructure",
+    n: "05", title: "Process Plant & Infrastructure", id: "plant", href: "/solutions/process-plant-infrastructure",
     text: "Integrated engineering, procurement, construction, testing and commissioning for process plants and utility infrastructure.",
     items: ["Storage tank design & installation", "Process piping & utility connections", "Civil foundations & structural steel", "E&I and automation coordination", "Hygienic process factory installations", "Plant modification & retrofit"],
   },
