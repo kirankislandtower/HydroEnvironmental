@@ -61,12 +61,12 @@ export const company = {
 
 // The 8 core business divisions — each has its own page under /solutions/<slug>
 export const divisionNav = [
-  { title: "Process & Pipeline Engineering", desc: "Pre-commissioning, flushing, hydrotesting, chemical pickling", href: "/solutions/process-pipeline-engineering" },
+  { title: "Process & Pipeline Engineering", desc: "Pre-commissioning, flushing, hydrotesting, chemical cleaning", href: "/solutions/process-pipeline-engineering" },
   { title: "District Cooling & Thermal Utility", desc: "CHW flushing, ETS, DCP piping, side-stream filtration", href: "/solutions/district-cooling" },
-  { title: "Industrial Process & Factory Utilities", desc: "Factory conversions, utilities, boiler & fuel-line cleaning", href: "/solutions/industrial-process-utilities" },
+  { title: "Industrial Process & Factory Utilities", desc: "Utilities, process piping, boiler & fuel-line cleaning", href: "/solutions/industrial-process-utilities" },
   { title: "Water, Wastewater & Environmental", desc: "RO & STP commissioning, contaminated water, dosing", href: "/solutions/water-wastewater" },
-  { title: "Process Plant EPC & Infrastructure", desc: "Tanks, piping, steel, E&I coordination, retrofit", href: "/solutions/process-plant-epc" },
-  { title: "Industrial Cleaning & Hydro-Demolition", desc: "UHP jetting, hydro-cutting, exchanger cleaning, blasting", href: "/solutions/industrial-cleaning" },
+  { title: "Process Plant & Infrastructure", desc: "Tanks, piping, steel, E&I coordination, retrofit", href: "/solutions/process-plant-infrastructure" },
+  { title: "Industrial Cleaning & Coating", desc: "Heat exchanger cleaning, surface prep, coating", href: "/solutions/industrial-cleaning" },
   { title: "Chemical Engineering & Treatment", desc: "Chemical cleaning, passivation, biocide, corrosion control", href: "/solutions/chemical-treatment" },
   { title: "Equipment Engineering & Rental", desc: "Pump packages, flushing & filtration skids, generators", href: "/solutions/equipment-engineering" },
 ];
@@ -95,10 +95,10 @@ export const homeSectionFor: Record<string, string> = {
 // Legacy explorer (not on the current landing page) — kept in sync with the divisions
 export const serviceExplorer = [
   { title: "Chilled Water Flushing", text: "Engineered flushing, filtration and chemical treatment for district cooling networks, ETS and building CHW systems.", href: "/solutions/district-cooling", image: u("1620203853151-496c7228306c") },
-  { title: "Pipeline Pre-Commissioning", text: "Cleaning, flushing, hydrotesting, leak testing and chemical pickling before a system is placed into service.", href: "/solutions/process-pipeline-engineering", image: u("1607472586893-edb57bdc0e39") },
-  { title: "Industrial Utilities", text: "Factory conversions, process piping and compressed air, steam, gas and water utilities.", href: "/solutions/industrial-process-utilities", image: u("1538474705339-e87de81450e8") },
+  { title: "Pipeline Pre-Commissioning", text: "Cleaning, flushing, hydrotesting and chemical cleaning before a system is placed into service.", href: "/solutions/process-pipeline-engineering", image: u("1607472586893-edb57bdc0e39") },
+  { title: "Industrial Utilities", text: "Process piping and compressed air, steam, gas and water utilities.", href: "/solutions/industrial-process-utilities", image: u("1538474705339-e87de81450e8") },
   { title: "Water & Wastewater", text: "RO and STP installation and commissioning support, contaminated water and modular treatment packages.", href: "/solutions/water-wastewater", image: u("1533077162801-86490c593afb") },
-  { title: "Industrial Cleaning", text: "UHP water jetting, hydro-demolition, heat exchanger cleaning and blasting.", href: "/solutions/industrial-cleaning", image: u("1556695736-d287caebc48e") },
+  { title: "Industrial Cleaning", text: "Heat exchanger cleaning, surface preparation and protective coating.", href: "/solutions/industrial-cleaning", image: u("1556695736-d287caebc48e") },
   { title: "Equipment & Rental", text: "Engineered pump packages, flushing and filtration skids, generators and compressors.", href: "/products/equipment", image: u("1579525612525-053cd3e8cbd7") },
 ];
 
@@ -107,8 +107,8 @@ export const serviceRibbon = [
   { label: "District Cooling & Thermal Utility", href: "/solutions/district-cooling" },
   { label: "Industrial Process & Utilities", href: "/solutions/industrial-process-utilities" },
   { label: "Water & Wastewater", href: "/solutions/water-wastewater" },
-  { label: "Process Plant EPC", href: "/solutions/process-plant-epc" },
-  { label: "Industrial Cleaning & UHP", href: "/solutions/industrial-cleaning" },
+  { label: "Process Plant & Infrastructure", href: "/solutions/process-plant-infrastructure" },
+  { label: "Industrial Cleaning & Coating", href: "/solutions/industrial-cleaning" },
   { label: "Chemical Treatment & Passivation", href: "/solutions/chemical-treatment" },
   { label: "Equipment Engineering & Rental", href: "/products/equipment" },
 ];
@@ -126,19 +126,19 @@ export const chapters = [
   { n: "02", title: "Method engineering", text: "Method statement, ITP, flushing or cleaning sequence, hydrotest procedure, chemical plan, equipment layout, hose route, filtration stages and safety controls.", tag: "Every step written down.", image: "/images/stages/02-method-engineering.webp" },
   { n: "03", title: "Equipment sizing", text: "Pumps, filters, strainers, tanks, generators, compressors, manifolds, gauges and chart recorders selected on flow, head, pressure, solids loading and duration.", tag: "Correct equipment, not available equipment.", image: "/images/stages/03-equipment-sizing.webp" },
   { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilized to site.", tag: "Ready from our warehouse to your site.", image: "/images/stages/04-site-mobilization.webp" },
-  { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure and leak testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: "/images/stages/05-controlled-execution.webp" },
+  { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: "/images/stages/05-controlled-execution.webp" },
   { n: "06", title: "Monitoring & validation", text: "Flow, pressure, turbidity, filter differential pressure, test duration, leakage, chemical parameters and client witness points are monitored throughout.", tag: "Measured, not assumed.", image: "/images/stages/06-monitoring-validation.webp" },
   { n: "07", title: "Documentation & handover", text: "Reports, test records, pressure charts, flushing and chemical records, photographs, equipment logs and completion certificates.", tag: "Evidence for acceptance.", image: "/images/stages/07-documentation-handover.webp" },
   { n: "08", title: "Optimization & support", text: "Commissioning support, troubleshooting, additional filtration, chemical adjustment, balancing assistance, temporary utilities and maintenance follow-up.", tag: "Beyond completion — to reliable operation.", image: "/images/stages/08-optimization-support.webp" },
 ];
 
-// Core business divisions — profile pp.5–7 (with handwritten edits: Chemical Pickling replaces flange management;
+// Core business divisions — profile pp.5–7 (with handwritten edits: 
 // dosing "both manual & automatic").
 export const capabilities = [
   {
     n: "01", title: "Process & Pipeline Engineering", id: "process-pipeline", href: "/solutions/process-pipeline-engineering",
     text: "Pipeline and process system preparation, cleaning, testing, leak verification, filtration, disinfection and commissioning readiness.",
-    items: ["Pipeline pre-commissioning", "Chilled water pipeline flushing", "Hydrotesting & leak testing", "Chemical cleaning & chemical pickling", "Process plant, steel & alloy piping", "HDPE works, hot & cold insulation"],
+    items: ["Pipeline pre-commissioning", "Chilled water pipeline flushing", "Hydrotesting & pressure testing", "Chemical cleaning", "Process plant, steel & alloy piping", "HDPE works, hot & cold insulation"],
   },
   {
     n: "02", title: "District Cooling & Thermal Utility", id: "district-cooling", href: "/solutions/district-cooling",
@@ -147,8 +147,8 @@ export const capabilities = [
   },
   {
     n: "03", title: "Industrial Process & Factory Utilities", id: "industrial", href: "/solutions/industrial-process-utilities",
-    text: "Industrial utility systems, factory conversions, process piping and commissioning support for manufacturing facilities.",
-    items: ["Warehouse-to-factory conversion", "Compressed air, water, steam & gas utilities", "Industrial boiler cleaning", "Heavy fuel line flushing", "Conveyor belt integration", "Sand-blasting & paint room construction"],
+    text: "Industrial utility systems, process piping and commissioning support for manufacturing facilities.",
+    items: ["Compressed air, water, steam & gas utilities", "Industrial boiler cleaning", "Heavy fuel line flushing", "Conveyor belt integration"],
   },
   {
     n: "04", title: "Water, Wastewater & Environmental", id: "water", href: "/solutions/water-wastewater",
@@ -156,14 +156,14 @@ export const capabilities = [
     items: ["Industrial contaminated water treatment", "RO plant installation & commissioning", "STP installation & commissioning", "Desalination plant support", "Manual & automatic chemical dosing", "Modular / containerized plants"],
   },
   {
-    n: "05", title: "Process Plant EPC & Infrastructure", id: "epc", href: "/solutions/process-plant-epc",
+    n: "05", title: "Process Plant & Infrastructure", id: "epc", href: "/solutions/process-plant-infrastructure",
     text: "Integrated engineering, procurement, construction, testing and commissioning for process plants and utility infrastructure.",
     items: ["Storage tank design & installation", "Process piping & utility connections", "Civil foundations & structural steel", "E&I and automation coordination", "Hygienic process factory installations", "Plant modification & retrofit"],
   },
   {
-    n: "06", title: "Industrial Cleaning & Hydro-Demolition", id: "cleaning", href: "/solutions/industrial-cleaning",
-    text: "UHP water jetting, concrete removal, exchanger cleaning, blasting and coating support for industrial assets.",
-    items: ["Aquajetting & UHP cleaning", "Hydro-demolition / concrete hydro-cutting", "Heat exchanger & condenser tube cleaning", "Sand & wet abrasive blasting", "Protective coating & painting", "Surface preparation, steel & concrete"],
+    n: "06", title: "Industrial Cleaning & Coating", id: "cleaning", href: "/solutions/industrial-cleaning",
+    text: "Heat exchanger and condenser tube cleaning, surface preparation and protective coating for industrial assets.",
+    items: ["Heat exchanger & condenser tube cleaning", "Surface preparation, steel & concrete", "Protective coating & painting"],
   },
   {
     n: "07", title: "Chemical Engineering & Treatment", id: "chemical", href: "/solutions/chemical-treatment",
@@ -173,7 +173,7 @@ export const capabilities = [
   {
     n: "08", title: "Equipment Engineering, Sales & Rental", id: "equipment", href: "/solutions/equipment-engineering",
     text: "Engineered fluid handling, temporary utilities, pressure testing, filtration and industrial equipment for rental, sale or projects.",
-    items: ["Engineered pump packages", "Diesel & electric pump assemblies", "Flushing & filtration skids", "Hydrotest pumps & accessories", "Generators, compressors & air dryers", "Tanks, blasting & water-jetting equipment"],
+    items: ["Engineered pump packages", "Diesel & electric pump assemblies", "Flushing & filtration skids", "Hydrotest pumps & accessories", "Generators, compressors & air dryers", "Storage & circulation tanks"],
   },
 ];
 
@@ -209,7 +209,7 @@ export const facilities = [
 
 export const qhse = [
   { title: "Quality", items: ["Method statements, ITPs and checklists to project scope", "Equipment inspection and readiness checks before mobilization", "Records for test results, flushing, chemical treatment and handover"] },
-  { title: "Health & safety", items: ["Risk assessments and method statements for field activities", "Controlled pressurization, barricading, exclusion zones and hose restraint", "Safe operation of high-pressure and UHP water-jetting equipment"] },
+  { title: "Health & safety", items: ["Risk assessments and method statements for field activities", "Controlled pressurization, barricading, exclusion zones and hose restraint", "Safe operation of high-pressure pumping equipment"] },
   { title: "Environment", items: ["Chemical handling controls, PPE, SDS awareness and spill prevention", "Responsible handling of wastewater, chemical discharge and contaminated water", "Toolbox talks, supervision and an incident-prevention culture"] },
 ];
 
@@ -238,7 +238,7 @@ export const references = [
   { year: "2012", name: "Oberoi Centre, Dubai", scope: "Chilled & condenser water flushing", relLabel: "Contracted by", rel: "Transgulf", historic: true },
 ];
 
-// GROUP experience — Island Tower Electromechanical Works LLC (est. 2003), sister company in Island Tower Group.
+// GROUP experience — Island Tower Electromechanical Works LLC sister company in Island Tower Group.
 // Selected from its 137-job flushing reference list. Always labelled as group experience on the site.
 export const groupReferences = [
   { name: "Mall of the Emirates", scope: "CHW flushing", sector: "Retail" },
@@ -269,7 +269,6 @@ export const groupReferences = [
 
 export const groupStats = [
   { v: "137+", k: "flushing jobs in the group reference list" },
-  { v: "2003", k: "Island Tower Electromechanical established" },
   { v: "1,600 m³/h", k: "largest electric flushing pump in the group fleet" },
   { v: "1 µm", k: "finest filtration on group bag-filter skids" },
 ];
@@ -299,7 +298,7 @@ export const environments = [
   { n: "03", title: "Water & Wastewater", text: "RO, STP, desalination, contaminated water, filtration and suspended-solids treatment." },
   { n: "04", title: "Infrastructure & Utilities", text: "Pipeline systems, utility corridors, temporary pumping, pressure testing and commissioning." },
   { n: "05", title: "Food & Hygienic Process", text: "Hygienic process piping, process cleaning, utility connections and commissioning assistance." },
-  { n: "06", title: "Warehouses & Factory Conversions", text: "Converting warehouse space into operational industrial facilities with utilities and process services." },
+  { n: "06", title: "Warehouses & Industrial Facilities", text: "Utilities and process services for warehouses and operational industrial facilities." },
   { n: "07", title: "Energy & Industrial Support", text: "Boiler cleaning, heavy fuel line flushing, plant utility systems and shutdown support." },
   { n: "08", title: "Commercial & Building Systems", text: "Building flushing, pump systems, filtration, chemical treatment and hydrotesting." },
 ];
@@ -307,8 +306,8 @@ export const environments = [
 export const productRanges = [
   {
     n: "01", id: "equipment", title: "Sales & Rental Fleet",
-    text: "Engineered pump packages, diesel and electric pumps, flushing and filtration skids, hydrotest pumps, generators, compressors, dewatering pumps, tanks and water-jetting equipment — selected, assembled and supported by our technicians.",
-    tags: ["Pump packages", "Flushing skids", "Filtration skids", "Generators", "Compressors", "UHP"],
+    text: "Engineered pump packages, diesel and electric pumps, flushing and filtration skids, hydrotest pumps, generators, compressors, dewatering pumps, and tanks — selected, assembled and supported by our technicians.",
+    tags: ["Pump packages", "Flushing skids", "Filtration skids", "Generators", "Compressors"],
     link: "View the fleet",
     image: "/images/products/sales-rental-fleet.webp",
   },
@@ -335,7 +334,7 @@ export const chemicalFunctions = [
   { title: "Pre-cleaning", text: "Removal of loose contamination, oil, grease, mill scale, deposits, construction debris and suspended solids." },
   { title: "Descaling", text: "Chemical removal of scale, hardness deposits, corrosion products and mineral build-up." },
   { title: "Degreasing", text: "Removal of oil and grease contamination from pipework, tanks and process systems." },
-  { title: "Chemical pickling & passivation", text: "Oxide removal and protective metal surface conditions after cleaning, where specified and compatible." },
+  { title: "Passivation", text: "Protective metal surface conditioning after cleaning, where specified and compatible." },
   { title: "Biocide & disinfection", text: "Microbial control and chemical disinfection of applicable water systems." },
   { title: "Neutralization", text: "pH adjustment and neutralization of cleaning fluids or system water before disposal." },
   { title: "Corrosion control", text: "Inhibitor dosing, preservation and chemistry control to reduce corrosion risk." },
@@ -359,23 +358,19 @@ export const faqs = [
   },
   {
     q: "What is pipeline pre-commissioning?",
-    a: "Pre-commissioning covers everything needed before a pipeline or piping system is placed into service: cleaning and flushing, filling, hydrotesting, leak testing, dewatering support, filtration, disinfection, chemical cleaning or pickling, and commissioning assistance — documented with pressure charts, flushing logs and water quality reports.",
+    a: "Pre-commissioning covers everything needed before a pipeline or piping system is placed into service: cleaning and flushing, filling, hydrotesting, dewatering support, filtration, disinfection, chemical cleaning and commissioning assistance — documented with pressure charts, flushing logs and water quality reports.",
   },
   {
-    q: "Do you carry out hydrotesting and leak testing?",
-    a: "Yes. We pressure-test pipelines, process piping, tanks and utility systems with hydrotest pumps, calibrated gauges and chart recorders, under controlled pressurization, barricading and hose restraint, and verify flanges, valves, joints and system boundaries for leaks.",
+    q: "Do you carry out hydrotesting?",
+    a: "Yes. We pressure-test pipelines, process piping, tanks and utility systems with hydrotest pumps, calibrated gauges and chart recorders, under controlled pressurization, barricading and hose restraint.",
   },
   {
     q: "Can I rent flushing pumps, filtration skids or generators?",
-    a: "Yes. Our sales and rental division supplies engineered pump packages, diesel and electric pumps, flushing and filtration skids, hydrotest pumps, generators, air compressors and dryers, dewatering and submersible pumps, tanks and water-jetting equipment — selected and supported to your hydraulic requirement, with operators if needed.",
+    a: "Yes. Our sales and rental division supplies engineered pump packages, diesel and electric pumps, flushing and filtration skids, hydrotest pumps, generators, air compressors and dryers, dewatering and submersible pumps, and tanks — selected and supported to your hydraulic requirement, with operators if needed.",
   },
   {
     q: "What chemical cleaning services do you offer?",
-    a: "Pre-cleaning, descaling, degreasing, chemical pickling, passivation support, biocide treatment and disinfection, corrosion control and pH neutralization of pipelines, tanks and process systems. Chemistry is selected for the pipe material, contamination type, process risk and disposal constraints.",
-  },
-  {
-    q: "Do you provide industrial cleaning and hydro-demolition?",
-    a: "Yes — aquajetting, high-pressure and ultra-high-pressure (UHP) water jetting, concrete hydro-demolition and hydro-cutting, heat exchanger and condenser tube bundle cleaning, sand and wet abrasive blasting, and protective coating support for steel and concrete assets.",
+    a: "Pre-cleaning, descaling, degreasing, passivation support, biocide treatment and disinfection, corrosion control and pH neutralization of pipelines, tanks and process systems. Chemistry is selected for the pipe material, contamination type, process risk and disposal constraints.",
   },
   {
     q: "Which areas do you serve and how do I request a quotation?",

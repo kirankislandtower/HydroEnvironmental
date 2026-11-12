@@ -7,7 +7,7 @@ import { statementImage } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Engineering Divisions — Flushing & Utilities UAE",
   description:
-    "Eight HEES divisions: pipeline pre-commissioning, district cooling, factory utilities, water treatment, EPC, industrial cleaning and chemicals.",
+    "Eight HEES divisions: pipeline pre-commissioning, district cooling, factory utilities, water treatment, process plants, industrial cleaning and chemicals.",
   alternates: { canonical: "/solutions" },
 };
 

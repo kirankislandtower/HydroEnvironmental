@@ -23,12 +23,12 @@ export const keywords = [
   // industrial
   "factory utility installation", "process piping UAE", "industrial plant commissioning", "RO plant commissioning",
   "STP installation support", "boiler cleaning UAE", "heavy fuel line flushing", "industrial water treatment",
-  "contaminated water treatment", "chemical pickling UAE", "passivation services UAE",
+  "contaminated water treatment", "passivation services UAE",
   // cleaning
-  "UHP water jetting UAE", "hydro-demolition UAE", "heat exchanger cleaning UAE", "wet abrasive blasting",
+  "heat exchanger cleaning UAE", "protective coating UAE",
   // equipment
   "pump rental UAE", "diesel pump rental", "flushing skid rental", "filtration skid rental", "hydrotest pump rental",
-  "generator rental UAE", "air compressor rental UAE", "dewatering pump rental", "UHP pump rental", "water jetting equipment",
+  "generator rental UAE", "air compressor rental UAE", "dewatering pump rental",
   // local
   "chilled water flushing Dubai", "chilled water flushing Abu Dhabi", "pre-commissioning company Sharjah",
 ];
@@ -60,9 +60,9 @@ export function structuredData() {
     parentOrganization: { "@type": "Organization", name: "Island Tower Group of Companies" },
     knowsAbout: [
       "Chem-mechanical process engineering", "Pipeline pre-commissioning", "Chilled water flushing", "District cooling",
-      "Hydrotesting", "Leak testing", "Chemical cleaning", "Chemical pickling", "Passivation", "Side-stream filtration",
+      "Hydrotesting", "Chemical cleaning", "Passivation", "Side-stream filtration",
       "Industrial commissioning", "Factory utilities", "RO plant commissioning", "Sewage treatment plants",
-      "UHP water jetting", "Hydro-demolition", "Heat exchanger cleaning", "Pump packages", "Equipment rental",
+      "Heat exchanger cleaning", "Pump packages", "Equipment rental",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",

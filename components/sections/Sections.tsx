@@ -250,7 +250,7 @@ export function GroupExperience({ limit }: { limit?: number }) {
           </div>
           <p>
             Hydro is part of {company.group}. Our sister company, Island Tower Electromechanical Works LLC, has flushed
-            chilled and condenser water systems on landmark UAE projects since 2003. The projects below are group
+            chilled and condenser water systems on landmark UAE projects. The projects below are group
             experience, not Hydro contracts.
           </p>
         </div>

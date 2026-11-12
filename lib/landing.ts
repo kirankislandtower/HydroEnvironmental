@@ -31,7 +31,7 @@ export const band = {
 export const steps = [
   {
     n: "01", chip: "Process & pipeline", title: "Pipelines ready before service.",
-    text: "Pre-commissioning, system flushing, hydrotesting, leak testing, chemical cleaning and pickling, process, steel, alloy and HDPE piping.",
+    text: "Pre-commissioning, system flushing, hydrotesting, chemical cleaning, process, steel, alloy and HDPE piping.",
     href: "/solutions/process-pipeline-engineering", image: u("1607472586893-edb57bdc0e39"),
   },
   {
@@ -40,8 +40,8 @@ export const steps = [
     href: "/solutions/district-cooling", image: u("1620203853151-496c7228306c"),
   },
   {
-    n: "03", chip: "Industrial & EPC", title: "Factories and plants, built to run.",
-    text: "Factory utilities and conversions, boiler cleaning, heavy fuel line flushing, process plant EPC, RO and STP commissioning, UHP cleaning.",
+    n: "03", chip: "Industrial & plant", title: "Factories and plants, built to run.",
+    text: "Factory utilities, boiler cleaning, heavy fuel line flushing, process plant works, RO and STP commissioning.",
     href: "/solutions/industrial-process-utilities", image: u("1538474705339-e87de81450e8"),
   },
   {

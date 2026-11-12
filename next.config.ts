@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(__dirname),
   },
+  async redirects() {
+    return [
+      // division renamed (EPC wording removed — not in the prequalification)
+      { source: "/solutions/process-plant-epc", destination: "/solutions/process-plant-infrastructure", permanent: true },
+    ];
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },
