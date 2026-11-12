@@ -200,7 +200,8 @@
 @media (max-width: 900px) {
   .jr-ch, .jr-ch.flip { grid-template-columns: 1fr; gap: 36px; padding: 50px 24px; }
   .jr-ch.flip .jr-text { order: 0; }
-  .jr-card { order: -1; aspect-ratio: 4 / 5; }
+  .jr-card { order: -1; aspect-ratio: 4 / 3; max-height: 300px; border-radius: 22px; }
+  .jr-ch, .jr-ch.flip { gap: 26px; }
 }
 @media (max-width: 640px) {
   .ev { padding: 120px 0; }

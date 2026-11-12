@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
+import { PhoneIcon, WhatsAppIcon } from "./QuickContact";
 import { usePathname } from "next/navigation";
 import { company, homeSectionFor, navLinks } from "@/lib/content";
 
@@ -19,7 +20,16 @@ export default function Header() {
   const [hidden, setHidden] = useState(false);
   const [light, setLight] = useState(false);
   const [open, setOpen] = useState(false);
+  const [sub, setSub] = useState<string | null>(null);
   const pathname = usePathname();
+  // Expanding a group scrolls the menu so the group's row sits at the top and its pages are visible
+  const toggleSub = (label: string, btn: HTMLElement) => {
+    const next = sub === label ? null : label;
+    setSub(next);
+    if (!next) return;
+    const body = btn.closest<HTMLElement>(".mnav-body"), row = btn.closest("li");
+    if (body && row) setTimeout(() => body.scrollTo({ top: row.offsetTop - 8, behavior: "smooth" }), 60);
+  };
   const routeIndex = navLinks.findIndex((l) => l.href !== "/" && pathname.startsWith(l.href));
   const [homeActive, setHomeActive] = useState(0);
   const active = pathname === "/" ? homeActive : routeIndex;
@@ -137,18 +147,43 @@ export default function Header() {
             <i />
           </button>
         </div>
-        <ol>
-          {[...navLinks, { label: "Contact", href: "/contact#contact" }].map((item, i) => (
-            <li key={item.label} style={{ transitionDelay: open ? `${0.08 + i * 0.05}s` : "0s" }}>
-              <a href={item.href} onClick={() => setOpen(false)}>
-                {item.label} <small>{String(i + 1).padStart(2, "0")}</small>
-              </a>
-            </li>
-          ))}
-        </ol>
+        <div className="mnav-body" data-lenis-prevent>
+          <span className="mnav-label">Menu</span>
+          <ol>
+            {[...navLinks, { label: "Contact", href: "/contact#contact" }].map((item, i) => {
+              const kids = "children" in item ? item.children : null;
+              const isOn = item.href === "/contact#contact" ? pathname === "/contact" : i === active;
+              const isSub = sub === item.label;
+              return (
+                <li key={item.label} className={`${isOn ? "on" : ""}${isSub ? " sub" : ""}`} style={{ transitionDelay: open ? `${0.06 + i * 0.04}s` : "0s" }}>
+                  <div className="mnav-row">
+                    <a href={item.href} onClick={() => setOpen(false)}>
+                      <small>{String(i + 1).padStart(2, "0")}</small>
+                      <span>{item.label}</span>
+                    </a>
+                    {kids && (
+                      <button type="button" className="mnav-tog" aria-expanded={isSub} aria-label={`${isSub ? "Hide" : "Show"} ${item.label} pages`} onClick={(e) => toggleSub(item.label, e.currentTarget)}>
+                        <Chevron />
+                      </button>
+                    )}
+                  </div>
+                  {kids && (
+                    <div className="mnav-kids" aria-hidden={!isSub}>
+                      <div>
+                        {kids.map((c) => (
+                          <a key={c.title} href={c.href} tabIndex={isSub ? 0 : -1} onClick={() => setOpen(false)}>{c.title}</a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        </div>
         <div className="mnav-foot">
-          <a href={company.phoneHref}>{company.phone}</a>
-          <a href={company.emailHref}>{company.email}</a>
+          <a className="mnav-ico call" href={company.phoneHref} aria-label={`Call ${company.phone}`}><PhoneIcon size={17} /></a>
+          <a className="mnav-ico wa" href={company.whatsappHref} target="_blank" rel="noopener noreferrer" aria-label={`Chat on WhatsApp: ${company.phone}`}><WhatsAppIcon size={20} /></a>
         </div>
       </div>
     </>

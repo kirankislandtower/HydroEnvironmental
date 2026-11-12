@@ -114,6 +114,43 @@ export default function PageMotion() {
         });
       });
 
+      // 7. Section text + card choreography (all screen sizes)
+      // 7a. Headings: each word rises out of a mask. Only plain-text h2s are split; the
+      //     original markup is restored on cleanup.
+      gsap.utils.toArray<HTMLElement>("main section:not(.page-hero) h2").forEach((h) => {
+        if (h.children.length || h.closest(".ab-words")) return;
+        const original = h.innerHTML;
+        const text = h.textContent ?? "";
+        h.setAttribute("aria-label", text);
+        h.innerHTML = text.split(/\s+/).filter(Boolean)
+          .map((w) => `<span class="rw" aria-hidden="true"><span>${w.replace(/</g, "&lt;")}</span></span>`).join(" ");
+        cleanups.push(() => { h.innerHTML = original; h.removeAttribute("aria-label"); });
+        gsap.from(h.querySelectorAll(".rw > span"), {
+          yPercent: 110, rotate: 4, duration: 1.05, ease: "expo.out", stagger: 0.045,
+          scrollTrigger: { trigger: h, start: "top 88%", once: true },
+        });
+      });
+      // 7b. Eyebrow labels wipe in from the left
+      gsap.utils.toArray<HTMLElement>("main section:not(.page-hero) .label").forEach((l) => {
+        gsap.fromTo(l, { clipPath: "inset(0 100% 0 0)", x: -8 }, {
+          clipPath: "inset(0 0% 0 0)", x: 0, duration: 0.9, ease: "power3.out",
+          scrollTrigger: { trigger: l, start: "top 90%", once: true },
+        });
+      });
+      // 7c. Pull quotes ease in
+      gsap.utils.toArray<HTMLElement>(".ab-motto").forEach((q) => {
+        gsap.from(q, { opacity: 0, x: -24, duration: 1.2, ease: "power3.out", scrollTrigger: { trigger: q, start: "top 90%", once: true } });
+      });
+      // 7d. Cards: contents cascade (number → title → text → tags) after the card arrives
+      gsap.utils.toArray<HTMLElement>(".ab-pillar, .ab-card, .env, .spec-item, .lib-tile, .d-block, .strip-card").forEach((card) => {
+        const parts = card.querySelectorAll(":scope > *, :scope > div > *");
+        if (!parts.length) return;
+        gsap.from(parts, {
+          opacity: 0, y: 22, duration: 0.8, ease: "power3.out", stagger: 0.08, delay: 0.12,
+          scrollTrigger: { trigger: card, start: "top 86%", once: true },
+        });
+      });
+
       // 6. Parallax — desktop only (on phones it fights touch scrolling and costs battery)
       mm.add("(min-width: 901px)", () => {
         // 6a. Image bands: frame opens, photo slower than the page, text faster

@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { PhoneIcon } from "@/components/QuickContact";
 import Link from "next/link";
 import { breadcrumbData, ldJson } from "@/lib/seo";
 import { capabilities, chemicalFunctions, chemicalGroups, clients, company, ctaImage, documents, environments, facilities, groupFleet, groupReferences, groupStats, productRanges, qhse, references, strategy, whyHydro } from "@/lib/content";
@@ -349,7 +350,7 @@ export function CallToAction() {
         <p>Tell us the system type, pipe sizes or volume, location and scope. Our engineers will propose the method and equipment package.</p>
         <div className="actions">
           <a className="btn btn-solid" href={company.emailHref} data-magnetic>Discuss your project →</a>
-          <a className="btn btn-line" href={company.phoneHref}>Call {company.phone}</a>
+          <a className="btn-call btn-call-line" href={company.phoneHref} aria-label={`Call ${company.phone}`} title={`Call ${company.phone}`}><PhoneIcon size={20} /></a>
         </div>
       </div>
     </section>

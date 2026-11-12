@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PhoneIcon } from "@/components/QuickContact";
 import { DropArt, PipeArt } from "@/components/sections/Manifesto";
 import { chapters, company } from "@/lib/content";
 import { band, everySystem, feature, places, reach, steps } from "@/lib/landing";
@@ -195,7 +196,7 @@ export function Reach() {
         <p className="rc-p">{reach.text}</p>
         <div className="rc-actions">
           <Link className="btn rc-btn-light" href="/contact#contact" data-magnetic>Contact us <span className="arr">→</span></Link>
-          <a className="btn rc-btn-green" href={company.phoneHref}>Call {company.phone}</a>
+          <a className="btn-call rc-btn-green" href={company.phoneHref} aria-label={`Call ${company.phone}`} title={`Call ${company.phone}`}><PhoneIcon size={20} /></a>
         </div>
         <div className="rc-grid">
           <div className="rc-cards">
