@@ -116,7 +116,7 @@ export const solutionPages: DetailPage[] = [
       { title: "Contaminated water", text: "Industrial contaminated water treatment, phase separation systems and suspended solids treatment." },
       { title: "Filtration & temporary treatment", text: "Filtration systems, temporary treatment packages, temporary storage and transfer systems." },
       { title: "Chemical dosing", text: "Chemical dosing arrangements — both manual and automatic — for treatment and process water." },
-      { title: "Modular plants", text: "Modular and containerised plant supply, installation and commissioning support." },
+      { title: "Modular plants", text: "Modular and containerized plant supply, installation and commissioning support." },
     ],
     refsMatch: /STP|Greywater|Wastewater|dosing/i,
   },
@@ -154,7 +154,7 @@ export const solutionPages: DetailPage[] = [
       "UHP water jetting, hydro-demolition, heat exchanger cleaning, blasting and coating for industrial assets across the UAE. Request a method today.",
     introTitle: "Restore performance. Prepare surfaces. Remove concrete with control.",
     intro:
-      "Using high-pressure and ultra-high-pressure water systems, wet abrasive systems and specialised tools, Hydro supports shutdowns, maintenance, retrofit works, civil repair, mechanical cleaning, surface preparation and industrial asset restoration.",
+      "Using high-pressure and ultra-high-pressure water systems, wet abrasive systems and specialized tools, Hydro supports shutdowns, maintenance, retrofit works, civil repair, mechanical cleaning, surface preparation and industrial asset restoration.",
     blocks: [
       { title: "Aquajetting & UHP cleaning", text: "High-pressure and ultra-high-pressure water jetting for industrial cleaning and surface preparation." },
       { title: "Hydro-demolition", text: "Concrete hydro-demolition and hydro-cutting for controlled concrete removal using high-pressure water, plus concrete cutting." },
@@ -220,7 +220,7 @@ export const productPages: DetailPage[] = [
     image: "/images/divisions/equipment-fleet.webp",
     metaTitle: "Pump & Flushing Equipment Rental UAE",
     metaDescription:
-      "Rent diesel and electric pumps, flushing and filtration skids, generators, compressors and tanks in the UAE — mobilised with trained operators.",
+      "Rent diesel and electric pumps, flushing and filtration skids, generators, compressors and tanks in the UAE — mobilized with trained operators.",
     introTitle: "Equipment categories.",
     intro:
       "Every package is checked in our warehouse before mobilization and can be supplied with operators, technicians and maintenance support for the duration of the job.",

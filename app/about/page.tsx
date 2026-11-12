@@ -19,7 +19,7 @@ export default function AboutPage() {
         crumb="About"
         eyebrow="About HEES"
         title="Engineering reliability in every process."
-        lead="A specialised chem-mechanical process engineering company — operating at the intersection of chemistry, mechanics, hydraulics and field engineering."
+        lead="A specialized chem-mechanical process engineering company — operating at the intersection of chemistry, mechanics, hydraulics and field engineering."
         image={aboutImage}
         facts={[
           { v: company.established, k: "Established in the UAE" },

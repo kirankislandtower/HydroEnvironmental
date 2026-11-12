@@ -125,7 +125,7 @@ export const chapters = [
   { n: "01", title: "Technical assessment", text: "Drawings, pipe sizes, materials, volumes, design and operating pressure, flow, contamination risk, chemical compatibility and acceptance criteria are reviewed first.", tag: "Engineering before execution.", image: "/images/stages/01-technical-assessment.webp" },
   { n: "02", title: "Method engineering", text: "Method statement, ITP, flushing or cleaning sequence, hydrotest procedure, chemical plan, equipment layout, hose route, filtration stages and safety controls.", tag: "Every step written down.", image: "/images/stages/02-method-engineering.webp" },
   { n: "03", title: "Equipment sizing", text: "Pumps, filters, strainers, tanks, generators, compressors, manifolds, gauges and chart recorders selected on flow, head, pressure, solids loading and duration.", tag: "Correct equipment, not available equipment.", image: "/images/stages/03-equipment-sizing.webp" },
-  { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilised to site.", tag: "Ready from our warehouse to your site.", image: "/images/stages/04-site-mobilization.webp" },
+  { n: "04", title: "Site mobilization", text: "Tested equipment, trained operators, chemical handling arrangements, barricades, spill control, lifting accessories and documentation mobilized to site.", tag: "Ready from our warehouse to your site.", image: "/images/stages/04-site-mobilization.webp" },
   { n: "05", title: "Controlled execution", text: "Flushing, circulation, chemical cleaning, pressure and leak testing, filtration and disinfection under supervision and defined hold points.", tag: "Controlled, supervised, safe.", image: "/images/stages/05-controlled-execution.webp" },
   { n: "06", title: "Monitoring & validation", text: "Flow, pressure, turbidity, filter differential pressure, test duration, leakage, chemical parameters and client witness points are monitored throughout.", tag: "Measured, not assumed.", image: "/images/stages/06-monitoring-validation.webp" },
   { n: "07", title: "Documentation & handover", text: "Reports, test records, pressure charts, flushing and chemical records, photographs, equipment logs and completion certificates.", tag: "Evidence for acceptance.", image: "/images/stages/07-documentation-handover.webp" },
@@ -153,7 +153,7 @@ export const capabilities = [
   {
     n: "04", title: "Water, Wastewater & Environmental", id: "water", href: "/solutions/water-wastewater",
     text: "Water treatment, contaminated water, RO and STP installation and commissioning support and industrial wastewater assistance.",
-    items: ["Industrial contaminated water treatment", "RO plant installation & commissioning", "STP installation & commissioning", "Desalination plant support", "Manual & automatic chemical dosing", "Modular / containerised plants"],
+    items: ["Industrial contaminated water treatment", "RO plant installation & commissioning", "STP installation & commissioning", "Desalination plant support", "Manual & automatic chemical dosing", "Modular / containerized plants"],
   },
   {
     n: "05", title: "Process Plant EPC & Infrastructure", id: "epc", href: "/solutions/process-plant-epc",
@@ -168,7 +168,7 @@ export const capabilities = [
   {
     n: "07", title: "Chemical Engineering & Treatment", id: "chemical", href: "/solutions/chemical-treatment",
     text: "Chemical cleaning, disinfection, passivation, corrosion mitigation, contamination control and water chemistry management.",
-    items: ["Chemical cleaning of pipelines", "Disinfection of water systems", "Passivation & preservation", "Corrosion, scale & deposit control", "Biocide treatment & pH neutralisation", "Chemical supply & handling"],
+    items: ["Chemical cleaning of pipelines", "Disinfection of water systems", "Passivation & preservation", "Corrosion, scale & deposit control", "Biocide treatment & pH neutralization", "Chemical supply & handling"],
   },
   {
     n: "08", title: "Equipment Engineering, Sales & Rental", id: "equipment", href: "/solutions/equipment-engineering",
@@ -190,7 +190,7 @@ export const whyHydro = [
   { title: "Chem-mechanical expertise", text: "Chemical treatment, mechanical systems, fluid dynamics, pressure testing and commissioning knowledge in one team." },
   { title: "End-to-end delivery", text: "From engineering assessment to equipment deployment, site execution, testing, documentation, commissioning and optimization." },
   { title: "District cooling knowledge", text: "Practical experience in chilled water flushing, ETS works, DCP internal systems, filtration and hydrotesting." },
-  { title: "In-house equipment readiness", text: "Pumps, filtration systems, tanks, generators, compressors, hoses and manifolds mobilised as project packages." },
+  { title: "In-house equipment readiness", text: "Pumps, filtration systems, tanks, generators, compressors, hoses and manifolds mobilized as project packages." },
   { title: "Process reliability focus", text: "Reducing contamination, corrosion, pressure loss, clogged strainers, poor water quality and premature equipment failure." },
   { title: "Engineering-based rental", text: "Equipment is selected, assembled, integrated and supported to the hydraulic and operational requirement — not simply rented." },
   { title: "Responsive mobilization", text: "Warehouse, technicians, equipment and field teams together support rapid deployment for critical requirements." },
@@ -324,8 +324,8 @@ export const productRanges = [
 // Water-treatment chemical codes still supplied (HYDRO PQ 2025, pp.22–24)
 export const chemicalGroups = [
   { title: "Chilled water", items: [["INDION 5547C", "Nitrite-based scale & corrosion inhibitor, closed loop"], ["INDION 9020", "Iron dispersant for flushing & cleaning"], ["INDION 9079", "CHW dispersant"], ["INDION 9040", "Biocide, CHW & condenser water"], ["INDION 7106", "Biocide, diamine based"]] },
-  { title: "Boiler water", items: [["INDION 1461", "Multipurpose boiler treatment"], ["INDION 2144", "Antiscalant & sludge conditioner"], ["INDION 162", "Oxygen scavenger"], ["INDION R-101", "Condensate & steam return line treatment"], ["INDION 1507", "Acid descaler"], ["INDION 1103", "Alkaline cleaner, neutralising & passivation"]] },
-  { title: "Cooling towers", items: [["INDION 8176", "Scale & corrosion inhibitor, condenser water"], ["INDION 9087", "Biocide, DBNPA based"], ["INDION 1591", "Biocide, quat based"], ["INDION 1493", "Oxidising biocide, bromine based"]] },
+  { title: "Boiler water", items: [["INDION 1461", "Multipurpose boiler treatment"], ["INDION 2144", "Antiscalant & sludge conditioner"], ["INDION 162", "Oxygen scavenger"], ["INDION R-101", "Condensate & steam return line treatment"], ["INDION 1507", "Acid descaler"], ["INDION 1103", "Alkaline cleaner, neutralizing & passivation"]] },
+  { title: "Cooling towers", items: [["INDION 8176", "Scale & corrosion inhibitor, condenser water"], ["INDION 9087", "Biocide, DBNPA based"], ["INDION 1591", "Biocide, quat based"], ["INDION 1493", "Oxidizing biocide, bromine based"]] },
   { title: "RO plants", items: [["INDION 8110", "RO antiscalant"], ["INDION 2811", "RO acidic cleaner"], ["INDION 2814", "RO alkaline cleaner"], ["INDION 2826", "RO biocide"]] },
   { title: "Potable & sewage", items: [["INDION 3591", "Potable water corrosion inhibitor"], ["INDION SHC", "Chlorine releasing"], ["INDION ODC-100", "STP odour control"], ["INDION Hifloc", "Cationic liquid coagulant"], ["INDION DF 110", "Defoamer"]] },
 ];
