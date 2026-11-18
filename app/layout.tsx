@@ -31,6 +31,7 @@ const barlow = Barlow_Condensed({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: { google: "PIE9dDgbSXLRuXVxd3zkADNW_wZ8fVdJd5tATYLKiBw" },
   title: { default: seo.title, template: "%s | HEES" },
   description: seo.description,
   keywords,
