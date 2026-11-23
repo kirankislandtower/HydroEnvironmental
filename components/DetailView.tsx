@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ChemicalCatalogue, ChemicalFunctions, GroupFleet, PageHero } from "@/components/sections/Sections";
 import { references } from "@/lib/content";
-import { ldJson, serviceData } from "@/lib/seo";
+import Faq from "@/components/sections/Faq";
+import { faqStructuredData, ldJson, serviceData } from "@/lib/seo";
 import type { DetailPage } from "@/lib/pages";
 
 // Layout for every dropdown page (Solutions/* and Products/*) — a technical "spec sheet",
@@ -25,6 +26,7 @@ export default function DetailView({ page, siblings, base, section }: { page: De
         title={page.title}
         lead={page.lead}
         image={page.image}
+        imageAlt={page.imageAlt}
         kicker={`${pad(pos)} / ${pad(siblings.length)} · ${page.nav}`}
         chips={page.blocks.slice(0, 6).map((b, i) => ({ label: b.title, href: `#scope-${i + 1}` }))}
       />
@@ -81,6 +83,13 @@ export default function DetailView({ page, siblings, base, section }: { page: De
             ))}
           </ul>
         </section>
+      )}
+
+      {page.faqs && page.faqs.length > 0 && (
+        <>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(faqStructuredData(page.faqs, `${base}/${page.slug}`)) }} />
+          <Faq list={page.faqs} title={`${page.nav} — questions, answered.`} intro={page.faqIntro ?? page.metaDescription} cta="/contact#contact" />
+        </>
       )}
 
       {others.length > 0 && (

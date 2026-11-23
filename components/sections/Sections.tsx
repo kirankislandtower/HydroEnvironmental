@@ -409,8 +409,8 @@ export type HeroVariant = "cinematic" | "split" | "index" | "center";
 //  index     — light, no photo, oversized title over a counter row (Projects)
 //  center    — centred title; over a photo when `image` is set, otherwise on a fine grid (Resources)
 // Words rise in via CSS (no flash before JS); the last word is set in italic green.
-export function PageHero({ eyebrow, title, lead, image, crumb, parent, facts, variant = "cinematic", chips, kicker }: {
-  eyebrow: string; title: string; lead: string; image?: string; crumb: string; parent?: { label: string; href: string };
+export function PageHero({ eyebrow, title, lead, image, imageAlt, crumb, parent, facts, variant = "cinematic", chips, kicker }: {
+  eyebrow: string; title: string; lead: string; image?: string; imageAlt?: string; crumb: string; parent?: { label: string; href: string };
   facts?: HeroFact[]; variant?: HeroVariant; chips?: { label: string; href: string }[]; kicker?: string;
 }) {
   const after = 0.45 + title.split(" ").length * 0.06;
@@ -436,7 +436,9 @@ export function PageHero({ eyebrow, title, lead, image, crumb, parent, facts, va
         </div>
         {variant === "split" && image && (
           <figure className="hx-panel">
-            <div className="hx-panel-img" style={{ backgroundImage: `url("${image}")` }} />
+            {/* Real <img> (not a CSS background) so the photo and its alt text are indexable; sources are pre-optimized (Unsplash auto=format / local WebP) */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="hx-panel-img" src={image} alt={imageAlt ?? ""} fetchPriority="high" decoding="async" />
             {kicker && <figcaption className="hx-kicker">{kicker}</figcaption>}
           </figure>
         )}

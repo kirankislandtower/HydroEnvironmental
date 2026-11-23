@@ -34,7 +34,7 @@ export default function Intro() {
         <div className="hero-inner wrap">
           <div className="hero-parallax">
             <h1 className="serif">
-              <span className="label aqua h-fade hero-eyebrow"><i />Chem-mechanical process engineering · UAE</span>
+              <span className="label aqua h-fade hero-eyebrow"><i />Chilled water flushing &amp; pre-commissioning · UAE</span>
               <span className="line">{words("Engineering")} <span className="w"><span><em className="shine">reliability</em></span></span></span>
               <span className="line">{words("in every process.")}</span>
             </h1>

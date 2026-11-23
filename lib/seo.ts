@@ -5,10 +5,10 @@ import { company, divisionNav, faqs } from "./content";
 export const siteUrl = "https://www.heesllc.ae";
 
 export const seo = {
-  title: "Hydro Environmental & Engineering Services | UAE",
-  shortTitle: "Chem-Mechanical Process Engineering in UAE",
+  title: "Flushing & Pre-Commissioning UAE | Hydro Environmental (HEES)",
+  shortTitle: "Chilled Water Flushing & Pre-Commissioning in UAE",
   description:
-    "UAE chem-mechanical process engineering since 2008: chilled water flushing, pre-commissioning, hydrotesting, chemical treatment and equipment rental.",
+    "UAE pre-commissioning company since 2008: chilled water flushing, hydrotesting, chemical cleaning and flushing pump rental in Dubai, Abu Dhabi & Sharjah.",
 };
 
 /** Primary + secondary keywords (grouped by search intent). */
@@ -86,12 +86,12 @@ export function structuredData() {
   return { "@context": "https://schema.org", "@graph": [org, website] };
 }
 
-/** FAQPage JSON-LD — published on /resources, where the FAQ is visible. */
-export function faqStructuredData() {
+/** FAQPage JSON-LD — only on pages where the same questions are visible. */
+export function faqStructuredData(list: readonly { q: string; a: string }[] = faqs, path = "/resources") {
   const faq = {
     "@type": "FAQPage",
-    "@id": `${siteUrl}/resources#faq`,
-    mainEntity: faqs.map((f) => ({
+    "@id": `${siteUrl}${path}#faq`,
+    mainEntity: list.map((f) => ({
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
