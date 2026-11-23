@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ChemicalCatalogue, ChemicalFunctions, GroupFleet, PageHero } from "@/components/sections/Sections";
 import { references } from "@/lib/content";
 import Faq from "@/components/sections/Faq";
+import ArticleCard from "@/components/insights/ArticleCard";
+import { articles } from "@/lib/insights";
 import { faqStructuredData, ldJson, serviceData } from "@/lib/seo";
 import type { DetailPage } from "@/lib/pages";
 
@@ -12,6 +14,7 @@ import type { DetailPage } from "@/lib/pages";
 export default function DetailView({ page, siblings, base, section }: { page: DetailPage; siblings: DetailPage[]; base: string; section: string }) {
   const related = page.refsMatch ? references.filter((r) => page.refsMatch!.test(`${r.scope} ${r.name}`)).slice(0, 6) : [];
   const others = siblings.filter((p) => p.slug !== page.slug);
+  const reading = articles.filter((a) => a.services.some((s) => s.href === `${base}/${page.slug}`)).slice(0, 3);
   const pos = siblings.findIndex((p) => p.slug === page.slug) + 1;
   const pad = (n: number) => String(n).padStart(2, "0");
 
@@ -90,6 +93,18 @@ export default function DetailView({ page, siblings, base, section }: { page: De
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(faqStructuredData(page.faqs, `${base}/${page.slug}`)) }} />
           <Faq list={page.faqs} title={`${page.nav} — questions, answered.`} intro={page.faqIntro ?? page.metaDescription} cta="/contact#contact" />
         </>
+      )}
+
+      {reading.length > 0 && (
+        <section className="ins-more" data-tone="light" aria-labelledby="reading-h">
+          <div className="wrap">
+            <div className="ins-more-head">
+              <h2 className="serif" id="reading-h">Related reading.</h2>
+              <Link href="/insights">All insights →</Link>
+            </div>
+            <ul className="ins-grid">{reading.map((a) => <ArticleCard key={a.slug} a={a} level={3} />)}</ul>
+          </div>
+        </section>
       )}
 
       {others.length > 0 && (

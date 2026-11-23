@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Barlow_Condensed, Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import "./inner.css";
+import "./insights/insights.css";
 import { keywords, seo, siteUrl } from "@/lib/seo";
 
 // Type system — same pairing as the reference site (hydropsindia.com):
