@@ -424,6 +424,135 @@ export const articles: Article[] = [
       { label: "Cleaning & treatment chemicals", href: "/products/chemicals" },
     ],
   },
+  {
+    slug: "bsria-bg29-pre-commission-cleaning",
+    title: "BSRIA BG29 explained: pre-commission cleaning of pipework.",
+    metaTitle: "BSRIA BG29 Flushing: Pre-Commission Cleaning Guide",
+    metaDescription:
+      "BSRIA BG29 flushing explained for UAE projects: what the guide covers, how cleaning is sequenced, what records to keep and what to ask your contractor.",
+    excerpt:
+      "BG29 is the guidance most UAE specifications cite for pre-commission cleaning of pipework. Here is what it means in practice, and how to plan, check and document the work.",
+    category: "Pre-commissioning",
+    published: "2026-12-01",
+    image: "/images/stages/07-documentation-handover.webp",
+    imageAlt: "Two site engineers in hard hats and hi-vis vests reviewing work on a tablet at a construction site, representing cleaning records and handover documentation",
+    sections: [
+      {
+        h: "What is BSRIA BG29 and what does it cover?",
+        p: [
+          "BSRIA BG29 is the BSRIA application guide for the pre-commission cleaning of pipework systems. It describes how new closed-circuit building services pipework — chilled water, heating and similar systems — should be flushed, cleaned and verified before it is commissioned, so that debris and construction residue do not damage equipment or upset system performance.",
+          "It is guidance, not legislation. It becomes binding on a project only when the specification, contract or consultant calls it up, and the project specification always sets the acceptance criteria. Always read the clause in your own specification rather than relying on a summary — including this one.",
+        ],
+      },
+      {
+        h: "Why UAE specifications ask for it",
+        p: [
+          "New pipework is dirty. Mill scale, protective oil, welding slag, cutting swarf, sand and dust are left inside during fabrication and installation, and the UAE climate adds fine dust and heavy heat that accelerates corrosion in systems left open or wet-stored.",
+          "That contamination blocks strainers, fouls plate heat exchangers and control valves, scores pump seals and shows up later as poor delta-T. For district cooling and large building systems, consultants and operators want documented proof that the network is clean before it is connected or handed over, and BG29 is the common reference for how that proof is produced.",
+        ],
+      },
+      {
+        h: "The cleaning sequence BG29 is built around",
+        p: [
+          "The guide treats cleaning as a planned sequence rather than a single flush. The exact stages and values come from the specification, but the logic is consistent across projects:",
+        ],
+        list: [
+          "Plan: survey the system, agree isolation of sensitive equipment, circulation routes, water source, discharge and disposal.",
+          "Fill and vent: fill with clean water, vent high points, and check for leaks and open valves before any pumping.",
+          "Pre-flush: remove loose, heavy debris through drains and strainers at low velocity.",
+          "Dynamic flushing: circulate at the velocity the specification requires, section by section, until the water leaving the system is visibly clean.",
+          "Chemical cleaning: where the specification or condition of the system calls for it, remove oils, grease and mill scale with a selected cleaning chemical, then drain and rinse.",
+          "Final rinse and filtration: bring the water to the required cleanliness, often with temporary or side-stream filtration.",
+          "Treatment and verification: dose inhibitor and biocide as specified, sample, and record the results.",
+        ],
+        after: [
+          "The sequence is the same as in our [chilled water flushing procedure](/insights/chilled-water-flushing-procedure); BG29 is the framework, and the method statement turns it into a site plan.",
+        ],
+      },
+      {
+        h: "Flushing velocity and how to prove it was achieved",
+        p: [
+          "Flushing works because moving water carries debris to a point where it can be captured. For that to happen the flow must be high enough in every pipe, not just in the main header. The guide ties flushing to a velocity target; take the number from the guide and your specification, not from a rule of thumb.",
+          "Because velocity depends on flow and pipe bore, branches of different sizes cannot all be flushed at once on a single pump. Sections are sized and sequenced so each one sees the required velocity, which is why [flushing pump selection](/products/equipment) is part of the plan, not an afterthought. Record the measured flow, the calculated velocity and the section flushed, with the date and who witnessed it.",
+        ],
+      },
+      {
+        h: "When flushing alone is not enough",
+        p: [
+          "Water velocity moves loose debris but does not dissolve oils, grease or tightly bonded scale. Where the system contains those, a chemical cleaning stage is added, using chemistry compatible with every metal, gasket and seal in the circuit. The decision depends on the system and the specification — see [flushing versus chemical cleaning](/insights/chemical-cleaning-and-passivation) for how the two fit together.",
+          "Cleaning chemicals must be neutralized and disposed of in line with statutory and project requirements, so disposal is planned before the work starts.",
+        ],
+      },
+      {
+        h: "What a BG29-style method statement should contain",
+        p: [
+          "The method statement is the document the consultant approves before any water moves, so it is worth getting right. A clear one lets the reviewer check the logic without a site visit:",
+        ],
+        list: [
+          "System description: pipe materials, sizes, total volume and the sections the system is divided into for flushing",
+          "Marked-up schematics showing fill points, drains, strainers, temporary pumps, filters and every bypass spool",
+          "A list of equipment excluded from the circuit — heat exchangers, control valves, meters, coils — and how each is isolated and later reinstated",
+          "Flushing sequence and the target velocity for each section, with the calculation behind the pump selection",
+          "Chemical cleaning scope, product data and safety data sheets, material compatibility check, and the neutralization and disposal route",
+          "Sampling points, parameters, acceptance values taken from the specification, and who witnesses them",
+          "Safety arrangements: temporary pipework supports, pressure limits on temporary hoses, hot-weather working and spill control",
+        ],
+        after: [
+          "Reinstatement is the step most often forgotten. Spools, blanks and temporary strainers must be removed and recorded as removed, or the clean system is handed over with a blank still inside it.",
+        ],
+      },
+      {
+        h: "Who does what: contractor, consultant and operator",
+        p: [
+          "Responsibilities vary by contract, but the pattern is usually the same. The MEP contractor owns the cleaning work and the method statement, often through a specialist subcontractor. The consultant approves the method and the acceptance criteria, and witnesses key steps such as sampling. The operator — in district cooling, the utility that will connect the building — reviews the records before it accepts the connection.",
+          "Agree early who witnesses what and with how much notice. A flush that is finished on a Thursday but cannot be witnessed until the following week costs more in programme time than the flush itself, especially when temporary equipment is on hire.",
+        ],
+      },
+      {
+        h: "Records to keep for handover",
+        p: ["Work that is not documented will be questioned at handover. A typical BG29-style cleaning file includes:"],
+        list: [
+          "The approved cleaning method statement and flushing plan with drawings marked up for isolation and bypasses",
+          "Flushing logs: section, flow, velocity, duration, strainer and filter inspections",
+          "Chemical cleaning records: product, concentration, temperature, contact time, neutralization and disposal",
+          "Water sampling and laboratory results against the acceptance values in the specification",
+          "Dosing records for inhibitor and biocide after cleaning",
+          "Witness and sign-off sheets from the contractor, consultant and operator",
+        ],
+      },
+      {
+        h: "Common mistakes and what to ask your contractor",
+        p: ["The same problems recur on site:"],
+        list: [
+          "Flushing through plate heat exchangers, control valves or energy meters instead of bypassing them",
+          "Using one pump for branches that need very different flows",
+          "No agreed discharge route or water source, so work stops on the day",
+          "Leaving the system drained or untreated after cleaning",
+          "Accepting a clean look instead of a sampled result",
+        ],
+        after: [
+          "Before awarding the work, ask the contractor: How will you prove velocity in each section? Which equipment is isolated and how? What are the acceptance criteria and who signs them off? What happens to the cleaning fluid? What is delivered in the handover file?",
+        ],
+      },
+      {
+        h: "Where HEES fits",
+        p: [
+          "HEES plans and carries out flushing, chemical cleaning support, filtration and sampling coordination for chilled water and district cooling systems across the UAE, including temporary flushing pumps and filtration. Our [district cooling and CHW flushing](/solutions/district-cooling) team works to the cleaning criteria in your specification and provides the records for handover.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Is BSRIA BG29 mandatory in the UAE?", a: "BG29 is guidance, not UAE law. It applies to a project when the specification, consultant or operator requires it, so check the cleaning clause in your project documents." },
+      { q: "What does BSRIA BG29 cover?", a: "It covers the pre-commission cleaning of closed pipework systems such as chilled water and heating: planning, flushing, chemical cleaning where needed, and verifying cleanliness before commissioning." },
+      { q: "What velocity should a system be flushed at?", a: "The flushing velocity is set by the specification and the guidance it cites, not by a general rule. It is normally higher than the normal operating velocity so that debris is carried out of every section." },
+      { q: "What records does a flushing job need for handover?", a: "Typically the approved method statement, flushing logs, chemical cleaning and disposal records, laboratory sample results, dosing records and signed witness sheets. The specification lists exactly what is required." },
+    ],
+    services: [
+      { label: "District cooling & CHW flushing", href: "/solutions/district-cooling" },
+      { label: "Chemical cleaning & treatment", href: "/solutions/chemical-treatment" },
+      { label: "Flushing pump & skid rental", href: "/products/equipment" },
+    ],
+  },
 ];
 
 /** Rough reading time at ~220 words per minute. */
