@@ -20,6 +20,8 @@ export default function HeroFX() {
       canvas.style.display = "none";
       return;
     }
+    // Hidden by CSS (e.g. `.lp .hero-fx { display: none }` on the landing page) → don't burn CPU on an invisible loop
+    if (getComputedStyle(canvas).display === "none") return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 

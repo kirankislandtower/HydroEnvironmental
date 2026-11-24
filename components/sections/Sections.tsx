@@ -403,6 +403,13 @@ export function RiseTitle({ text, className = "serif" }: { text: string; classNa
 export type HeroFact = { v: string; k: string };
 export type HeroVariant = "cinematic" | "split" | "index" | "center";
 
+// Unsplash URLs resize on the fly — offer phone-sized versions so mobile doesn't download the 1200px photo.
+// Local WebP files have a single size, so they get no srcset.
+function unsplashSrcSet(src: string) {
+  if (!src.startsWith("https://images.unsplash.com/")) return undefined;
+  return [480, 720, 960, 1200].map((w) => `${src.replace(/([?&])w=\d+/, `$1w=${w}`)} ${w}w`).join(", ");
+}
+
 // Shared inner-page hero in four layouts, so page types open differently:
 //  cinematic — full-bleed photo, bottom-aligned, optional fact strip (About)
 //  split     — text left, framed photo right, in-page chips (Divisions / Equipment)
@@ -438,7 +445,7 @@ export function PageHero({ eyebrow, title, lead, image, imageAlt, crumb, parent,
           <figure className="hx-panel">
             {/* Real <img> (not a CSS background) so the photo and its alt text are indexable; sources are pre-optimized (Unsplash auto=format / local WebP) */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="hx-panel-img" src={image} alt={imageAlt ?? ""} fetchPriority="high" decoding="async" />
+            <img className="hx-panel-img" src={image} srcSet={unsplashSrcSet(image)} sizes="(max-width: 900px) 92vw, 540px" alt={imageAlt ?? ""} fetchPriority="high" decoding="async" />
             {kicker && <figcaption className="hx-kicker">{kicker}</figcaption>}
           </figure>
         )}

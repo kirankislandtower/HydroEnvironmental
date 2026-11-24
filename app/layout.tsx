@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { preconnect } from "react-dom";
 import { Barlow_Condensed, Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import "./inner.css";
@@ -65,6 +66,8 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  // most hero photos come from Unsplash — open the connection before the <img> is parsed
+  preconnect("https://images.unsplash.com");
   return (
     <html lang="en-AE" suppressHydrationWarning className={`${display.variable} ${body.variable} ${barlow.variable}`}>
       <body>{children}</body>
